@@ -1,0 +1,346 @@
+/* ============================================================
+   Глобальні кінцеві зони (final_stop) — сторінка final_stops
+   ============================================================ */
+
+.fs-container {
+   display: flex;
+   height: calc(100vh - 60px);
+   overflow: hidden;
+}
+
+/* ---- Ліва панель ---- */
+.fs-sidebar {
+   width: 375px;
+   min-width: 320px;
+   background: var(--panel);
+   border-right: 1px solid var(--card-border);
+   display: flex;
+   flex-direction: column;
+   overflow-x: hidden;
+   overflow-y: auto;
+   scrollbar-width: thin;
+   scrollbar-color: #353c5f var(--panel);
+}
+
+.fs-sidebar::-webkit-scrollbar {
+   width: 6px;
+   background: var(--panel);
+}
+
+.fs-sidebar::-webkit-scrollbar-thumb {
+   background: #384276;
+   border-radius: 4px;
+}
+
+.fs-sidebar-header {
+   padding: 16px;
+   border-bottom: 1px solid var(--border);
+}
+
+.fs-sidebar-header h3 {
+   font-size: 16px;
+   font-weight: 600;
+   color: var(--text);
+}
+
+.fs-subtitle {
+   margin-top: 4px;
+   font-size: 12px;
+   color: var(--muted);
+}
+
+.fs-subtitle code,
+.fs-hint code {
+   background: var(--code-bg);
+   padding: 1px 5px;
+   border-radius: 4px;
+   font-size: 11px;
+   color: var(--accent);
+}
+
+.fs-sidebar-search {
+   padding: 12px 16px;
+   border-bottom: 1px solid var(--border);
+}
+
+.fs-hint {
+   padding: 10px 16px;
+   font-size: 12px;
+   color: var(--muted);
+   font-style: italic;
+   line-height: 1.5;
+   border-bottom: 1px solid var(--border);
+}
+
+/* ---- Секція перегляду треку ---- */
+.fs-track-section {
+   padding: 12px 16px;
+   border-bottom: 1px solid var(--border);
+}
+
+.fs-track-title {
+   font-size: 14px;
+   font-weight: 600;
+   color: var(--text);
+}
+
+.fs-track-subtitle {
+   margin: 2px 0 10px;
+   font-size: 12px;
+   color: var(--muted);
+}
+
+.fs-track-section .form-group {
+   margin-bottom: 8px;
+}
+
+.fs-track-section .form-group label {
+   display: block;
+   font-size: 12px;
+   color: var(--muted);
+   margin-bottom: 4px;
+}
+
+.fs-track-actions {
+   display: flex;
+   gap: 8px;
+   margin-top: 4px;
+}
+
+.fs-track-actions .btn {
+   flex: 1;
+}
+
+.fs-track-status {
+   margin-top: 8px;
+   font-size: 12px;
+   color: var(--muted);
+   min-height: 16px;
+   line-height: 1.4;
+}
+
+.fs-track-status.error {
+   color: #ff6b6b;
+}
+
+/* ---- Список зон ---- */
+.fs-zones-list {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   padding: 12px;
+}
+
+.fs-empty {
+   text-align: center;
+   padding: 24px 12px;
+   color: var(--muted);
+   font-size: 13px;
+   font-style: italic;
+}
+
+.fs-zone-item {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 10px 12px;
+   background: var(--code-bg);
+   border: 1px solid var(--border);
+   border-radius: 8px;
+   cursor: pointer;
+   transition: border-color 0.15s, background 0.15s;
+}
+
+.fs-zone-item:hover {
+   border-color: var(--accent);
+   background: var(--hover-bg);
+}
+
+.fs-zone-item.inactive {
+   opacity: 0.55;
+}
+
+.fs-zone-dot {
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   flex-shrink: 0;
+   background: #E91E63;
+   box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.2);
+}
+
+.fs-zone-item--ignore .fs-zone-dot {
+   background: #601b1b;
+   box-shadow: 0 0 0 3px rgba(61, 21, 32, 0.35);
+}
+
+.fs-zone-item--ignore:hover {
+   border-color: rgba(107, 34, 54, 0.75);
+}
+
+.fs-zone-info {
+   flex: 1;
+   min-width: 0;
+}
+
+.fs-zone-name {
+   font-size: 14px;
+   font-weight: 600;
+   color: var(--text);
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.fs-zone-meta {
+   font-size: 11px;
+   color: var(--muted);
+   margin-top: 2px;
+}
+
+.fs-zone-actions {
+   display: flex;
+   gap: 4px;
+   opacity: 0;
+   transition: opacity 0.15s;
+}
+
+.fs-zone-item:hover .fs-zone-actions {
+   opacity: 1;
+}
+
+/* ---- Центральна частина: карта ---- */
+.fs-map-container {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   overflow: hidden;
+}
+
+.fs-toolbar {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   padding: 8px 12px;
+   background: var(--panel);
+   border-bottom: 1px solid var(--card-border);
+}
+
+.fs-map {
+   flex: 1;
+   background: #e5e3df;
+}
+
+.fs-statusbar {
+   display: flex;
+   gap: 20px;
+   padding: 6px 12px;
+   background: var(--code-bg);
+   border-top: 1px solid var(--border);
+   font-size: 12px;
+   color: var(--muted);
+}
+
+.fs-draw-hint {
+   position: absolute;
+   top: 60px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 5;
+   padding: 8px 14px;
+   background: rgba(33, 150, 243, 0.12);
+   border: 1px dashed rgba(33, 150, 243, 0.5);
+   border-radius: 6px;
+   font-size: 13px;
+   color: var(--accent);
+   text-align: center;
+   line-height: 1.5;
+   pointer-events: none;
+   backdrop-filter: blur(2px);
+}
+
+/* ---- Панель редагування геометрії ---- */
+.fs-edit-panel {
+   position: absolute;
+   top: 60px;
+   right: 16px;
+   z-index: 6;
+   width: 260px;
+   padding: 14px 16px;
+   background: var(--panel);
+   border: 1px solid var(--card-border);
+   border-radius: 10px;
+   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+}
+
+.fs-edit-panel-title {
+   font-size: 15px;
+   font-weight: 600;
+   color: var(--text);
+   margin-bottom: 4px;
+}
+
+.fs-edit-panel-hint {
+   font-size: 12px;
+   color: var(--muted);
+   line-height: 1.5;
+   margin-bottom: 12px;
+}
+
+.fs-edit-active {
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   font-size: 13px;
+   color: var(--text-secondary);
+   margin-top: 8px;
+}
+
+.fs-edit-panel-actions {
+   display: flex;
+   gap: 8px;
+   margin-top: 14px;
+}
+
+.fs-edit-panel-actions .btn {
+   flex: 1;
+}
+
+/* ---- Маркери редагування зони ---- */
+.fs-edit-handle {
+   box-sizing: border-box;
+}
+
+.fs-handle-move {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   background: #fff;
+   border: 3px solid var(--accent-strong);
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+   cursor: move;
+}
+
+.fs-handle-resize {
+   width: 12px;
+   height: 12px;
+   border-radius: 2px;
+   background: #fff;
+   border: 2px solid #FF9800;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+   cursor: nwse-resize;
+}
+
+/* ---- Адаптив ---- */
+@media (max-width: 900px) {
+   .fs-container {
+      flex-direction: column;
+   }
+
+   .fs-sidebar {
+      width: 100%;
+      min-width: 100%;
+      max-height: 220px;
+   }
+}

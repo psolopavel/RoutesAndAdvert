@@ -1,0 +1,656 @@
+   /* Mapbox GL JS */
+   .mapboxgl-map {
+      font-family: inherit;
+   }
+
+   .routes-sidebar {
+      overflow-x: hidden !important;
+      overflow-y: auto !important;
+      scrollbar-width: thin;
+      scrollbar-color: #353c5f var(--panel);
+   }
+
+   .routes-sidebar::-webkit-scrollbar {
+      width: 6px;
+      background: var(--panel);
+   }
+
+   .routes-sidebar::-webkit-scrollbar-thumb {
+      background: #384276;
+      border-radius: 4px;
+   }
+
+   .routes-sidebar::-webkit-scrollbar-thumb:hover {
+      background: #2e3660;
+   }
+
+   /* Кнопка видалення точки (hover) */
+   .waypoint-list-item .wp-del {
+      margin-left: auto;
+      opacity: 0;
+      transition: opacity 0.2s;
+   }
+
+   .waypoint-list-item:hover .wp-del {
+      opacity: 1;
+   }
+
+   /* Route info */
+   .route-info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+   }
+
+   .route-info-empty {
+      text-align: center;
+      padding: 16px;
+      color: var(--muted);
+      font-size: 13px;
+      font-style: italic;
+   }
+
+   .route-info-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+   }
+
+   .route-info-row:last-child {
+      border-bottom: none;
+   }
+
+   .route-info-label {
+      font-size: 13px;
+      color: var(--muted);
+   }
+
+   .route-info-value {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+   }
+
+   /* Waypoints list */
+   .waypoints-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+   }
+
+   .waypoint-list-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      background: var(--code-bg);
+      border-radius: 6px;
+      font-size: 12px;
+      color: var(--text-secondary);
+   }
+
+   .waypoint-marker {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+   }
+
+   .waypoint-marker.origin {
+      background: #4CAF50;
+   }
+
+   .waypoint-marker.destination {
+      background: #f44336;
+   }
+
+   .waypoint-marker.waypoint {
+      background: var(--accent);
+   }
+
+   .waypoint-coords {
+      font-family: monospace;
+      font-size: 11px;
+      color: var(--muted);
+   }
+
+   /* Mapbox popup override */
+   .mapboxgl-popup-content {
+      background: var(--panel) !important;
+      color: var(--text) !important;
+      border: 1px solid var(--card-border) !important;
+      border-radius: 8px !important;
+      padding: 12px 16px !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+      font-size: 13px;
+   }
+
+   .mapboxgl-popup-tip {
+      border-top-color: var(--panel) !important;
+   }
+
+   .mapboxgl-popup-close-button {
+      color: var(--muted) !important;
+      font-size: 18px;
+   }
+
+   /* Custom Mapbox controls dark style */
+   .mapboxgl-ctrl-group {
+      background: var(--panel) !important;
+      border: 1px solid var(--card-border) !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+   }
+
+   .mapboxgl-ctrl-group button {
+      background-color: var(--panel) !important;
+      border-bottom-color: var(--border) !important;
+   }
+
+   .mapboxgl-ctrl-group button:hover {
+      background-color: var(--hover-bg) !important;
+   }
+
+   .mapboxgl-ctrl-group button span {
+      filter: invert(1) brightness(0.8);
+   }
+
+   .mapboxgl-ctrl-attrib {
+      background: rgba(15, 20, 25, 0.7) !important;
+      color: var(--muted) !important;
+      font-size: 10px !important;
+   }
+
+   .mapboxgl-ctrl-attrib a {
+      color: var(--accent) !important;
+   }
+
+   /* Toolbar edit-mode tools (undo + zone buttons) */
+   .toolbar-edit-tools {
+      align-items: center;
+      animation: toolbarFadeIn 0.2s ease-out;
+   }
+
+   .toolbar-edit-tools .toolbar-divider {
+      width: 1px;
+      height: 24px;
+      background: var(--border);
+      margin: 0 6px;
+      flex-shrink: 0;
+   }
+
+   @keyframes toolbarFadeIn {
+      from {
+         opacity: 0;
+         transform: translateY(-4px);
+      }
+
+      to {
+         opacity: 1;
+         transform: translateY(0);
+      }
+   }
+
+   /* Section title */
+   .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   /* ========== Properties panel edit UI ========== */
+
+   .prop-section {
+      padding-bottom: 14px;
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+   }
+
+   .prop-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+   }
+
+   .prop-edit-row {
+      margin-bottom: 12px;
+   }
+
+   .prop-edit-row label {
+      display: flex;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 4px;
+   }
+
+   .prop-edit-row .input,
+   .prop-edit-row select {
+      width: 100%;
+   }
+
+   .prop-edit-row input[type="color"] {
+      width: 100%;
+      height: 34px;
+      padding: 2px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--code-bg);
+      cursor: pointer;
+   }
+
+   .prop-toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .prop-toggle-row>label:first-child {
+      margin-bottom: 0;
+   }
+
+   /* Toggle switch */
+   .toggle-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      user-select: none;
+      font-size: 13px;
+   }
+
+   .toggle-switch input {
+      display: none;
+   }
+
+   .toggle-slider {
+      position: relative;
+      width: 36px;
+      height: 20px;
+      background: var(--border);
+      border-radius: 10px;
+      transition: background 0.25s;
+      flex-shrink: 0;
+   }
+
+   .toggle-slider::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform 0.25s;
+   }
+
+   .toggle-switch input:checked+.toggle-slider {
+      background: #4CAF50;
+   }
+
+   .toggle-switch input:checked+.toggle-slider::after {
+      transform: translateX(16px);
+   }
+
+   .toggle-text {
+      font-size: 13px;
+      color: var(--text-secondary);
+   }
+
+   /* Properties buttons */
+   .prop-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 16px;
+   }
+
+   .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text);
+   }
+
+   .btn-outline:hover {
+      background: var(--hover-bg);
+      border-color: var(--accent);
+   }
+
+   /* ========== Zones ========== */
+
+   .zone-add-buttons {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+   }
+
+   .zone-add-buttons .btn-small {
+      flex: 1;
+      min-width: 0;
+      font-size: 11px;
+      padding: 6px 8px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      justify-content: center;
+   }
+
+   .zones-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+   }
+
+   .zones-empty {
+      text-align: center;
+      padding: 12px;
+      color: var(--muted);
+      font-size: 13px;
+      font-style: italic;
+   }
+
+   .zone-list-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      background: var(--code-bg);
+      border-radius: 6px;
+      font-size: 12px;
+      color: var(--text-secondary);
+   }
+
+   .zone-type-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+   }
+
+   .zone-type-dot.advertising {
+      background: #FF9800;
+   }
+
+   .zone-type-dot.info {
+      background: #2196F3;
+   }
+
+   .zone-type-dot.service {
+      background: #9C27B0;
+   }
+
+   .zone-type-dot.custom {
+      background: #607D8B;
+   }
+
+   .zone-list-item .zone-name {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+   }
+
+   .zone-list-item .zone-name.zone-clickable {
+      cursor: pointer;
+      transition: color 0.15s;
+   }
+
+   .zone-list-item .zone-name.zone-clickable:hover {
+      color: var(--accent);
+      text-decoration: underline;
+   }
+
+   .zone-list-item .zone-edit,
+   .zone-list-item .zone-del {
+      opacity: 0;
+      transition: opacity 0.2s;
+      flex-shrink: 0;
+   }
+
+   .zone-list-item:hover .zone-edit,
+   .zone-list-item:hover .zone-del {
+      opacity: 1;
+   }
+
+   .zone-list-item.zone-editing {
+      background: rgba(33, 150, 243, 0.15);
+      border: 1px solid rgba(33, 150, 243, 0.3);
+   }
+
+   .zone-list-item.zone-editing .zone-edit {
+      opacity: 1;
+      color: var(--accent);
+   }
+
+   .zone-radius-badge {
+      font-size: 10px;
+      padding: 1px 5px;
+      border-radius: 8px;
+      background: var(--border);
+      color: var(--muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+   }
+
+   .zone-draw-hint {
+      padding: 8px 12px;
+      background: rgba(33, 150, 243, 0.1);
+      border: 1px dashed rgba(33, 150, 243, 0.4);
+      border-radius: 6px;
+      font-size: 12px;
+      color: var(--accent);
+      text-align: center;
+      margin-bottom: 8px;
+      line-height: 1.5;
+   }
+
+   .zone-draw-hint .cancel-draw {
+      color: #f44336;
+      cursor: pointer;
+      text-decoration: underline;
+      display: inline-block;
+      margin-top: 4px;
+   }
+
+   /* ---- Панель створення/редагування зупинки ---- */
+   .stop-edit-panel {
+      position: absolute;
+      top: 60px;
+      right: 16px;
+      z-index: 6;
+      width: 260px;
+      padding: 14px 16px;
+      background: var(--panel);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+   }
+
+   .stop-edit-panel-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+   }
+
+   .stop-edit-panel-hint {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-bottom: 12px;
+   }
+
+   .stop-edit-panel-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 14px;
+   }
+
+   .stop-edit-panel-actions .btn {
+      flex: 1;
+   }
+
+   /* Zone props in properties panel */
+   .prop-zone-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 8px;
+      background: var(--code-bg);
+      border-radius: 6px;
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+   }
+
+   .prop-zone-item .zone-name {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+   }
+
+   .prop-zone-type {
+      font-size: 10px;
+      color: var(--muted);
+      white-space: nowrap;
+   }
+
+   .prop-zone-clickable {
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+      border: 1px solid transparent;
+   }
+
+   .prop-zone-clickable:hover {
+      background: var(--hover-bg);
+      border-color: var(--accent);
+   }
+
+   /* Linked routes */
+   .prop-linked-item .btn-tiny {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      line-height: 1;
+   }
+
+   .link-search-results {
+      margin-top: 6px;
+      max-height: 220px;
+      overflow-y: auto;
+   }
+
+   .link-search-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 8px;
+      background: var(--code-bg);
+      border: 1px solid transparent;
+      border-radius: 6px;
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+   }
+
+   .link-search-item:hover {
+      background: var(--hover-bg);
+      border-color: var(--accent);
+   }
+
+   .link-search-item .zone-name {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+   }
+
+   /* Zone edit handles */
+   .zone-edit-handle {
+      transition: transform 0.1s;
+   }
+
+   .zone-edit-handle:hover {
+      transform: scale(1.3);
+   }
+
+   .zone-handle-move:active {
+      cursor: grabbing;
+   }
+
+   /* ========== Stops ========== */
+
+   .stops-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+   }
+
+   .stop-list-item {
+      cursor: grab;
+   }
+
+   .stop-list-item.stop-dragging {
+      opacity: 0.55;
+      cursor: grabbing;
+   }
+
+   .stop-list-item.stop-drag-over {
+      outline: 1px dashed var(--accent);
+      outline-offset: -1px;
+   }
+
+   .stop-drag-handle {
+      display: flex;
+      align-items: center;
+      color: var(--muted);
+      cursor: grab;
+      flex-shrink: 0;
+      opacity: 0.5;
+      transition: opacity 0.15s, color 0.15s;
+   }
+
+   .stop-list-item:hover .stop-drag-handle {
+      opacity: 1;
+      color: var(--text-secondary);
+   }
+
+   .stop-order-num {
+      min-width: 16px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      text-align: center;
+      flex-shrink: 0;
+   }
+
+   .stop-name-clickable {
+      cursor: pointer;
+      transition: color 0.15s;
+   }
+
+   .stop-name-clickable:hover {
+      color: var(--accent);
+      text-decoration: underline;
+   }
+
+   .prop-stop-clickable {
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+      border: 1px solid transparent;
+   }
+
+   .prop-stop-clickable:hover {
+      background: var(--hover-bg);
+      border-color: #E91E63;
+   }

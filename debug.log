@@ -1,0 +1,1584 @@
+[2025-09-22 13:44:41] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 13:44:42] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 13:45:45] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-22 13:45:45] FILE INFO video_file {"name":"7NVTT_20250811.mp4","type":"video/mp4","tmp_name":"/tmp/phpZaSQTT","error":0,"size":404707}
+[2025-09-22 13:45:45] File Check
+[2025-09-22 13:45:46] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 13:46:29] api.php called {"action":"update_ad","method":"POST"}
+[2025-09-22 13:46:30] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 13:49:56] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 13:49:57] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 13:50:16] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-22 13:50:16] FILE INFO video_file {"name":"7NVTT_20250811.mp4","type":"video/mp4","tmp_name":"/tmp/php7O8uH8","error":0,"size":404707}
+[2025-09-22 13:50:16] File Check
+[2025-09-22 13:50:17] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 13:57:24] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-22 14:11:12] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 14:11:14] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 14:44:57] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 14:45:00] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:01:05] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:01:25] api.php called {"action":"update_ad","method":"POST"}
+[2025-09-22 15:01:26] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:13:49] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:14:11] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-22 15:14:11] FILE INFO video_file {"name":"7NVTT_20250811.mp4","type":"video/mp4","tmp_name":"/tmp/phpzWVWm3","error":0,"size":404707}
+[2025-09-22 15:14:11] File Check
+[2025-09-22 15:14:12] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:44:51] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-22 15:44:51] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:44:53] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-22 15:44:53] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:48:36] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:48:39] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 15:48:44] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 15:48:48] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:48:50] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-22 15:48:50] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:49:55] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 15:49:57] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:49:58] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:50:19] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-22 15:50:19] FILE INFO video_file {"name":"7NVTT_20250811.mp4","type":"video/mp4","tmp_name":"/tmp/phpyhMyOj","error":0,"size":404707}
+[2025-09-22 15:50:19] File Check
+[2025-09-22 15:50:20] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:56:11] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 15:56:20] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-22 15:56:20] FILE INFO video_file {"name":"","type":"","tmp_name":"","error":4,"size":0}
+[2025-09-22 15:56:20] File Check
+[2025-09-22 15:56:28] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-22 15:56:28] FILE INFO video_file {"name":"7NVTT_20250824.mp4","type":"video/mp4","tmp_name":"/tmp/phpaNARQu","error":0,"size":98907}
+[2025-09-22 15:56:28] File Check
+[2025-09-22 15:56:29] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:06:06] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 16:06:10] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:06:37] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-22 16:06:37] FILE INFO video_file {"name":"7NVTT_20250811.mp4","type":"video/mp4","tmp_name":"/tmp/phpviRE71","error":0,"size":404707}
+[2025-09-22 16:06:37] File Check
+[2025-09-22 16:06:38] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:08:31] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:08:33] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:08:51] api.php called {"action":"update_ad","method":"POST"}
+[2025-09-22 16:08:52] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:09:16] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:21:52] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-22 16:21:52] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:21:53] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 16:21:56] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:22:09] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 16:22:11] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:22:14] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-22 16:22:14] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:22:16] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-22 16:22:16] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:22:19] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 16:23:24] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 16:23:26] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:23:54] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-22 16:23:54] FILE INFO video_file {"name":"7NVTT_20250811.mp4","type":"video/mp4","tmp_name":"/tmp/phpf3o7tc","error":0,"size":404707}
+[2025-09-22 16:23:54] File Check
+[2025-09-22 16:23:55] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:59:11] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 16:59:14] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:59:15] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 16:59:34] api.php called {"action":"update_ad","method":"POST"}
+[2025-09-22 16:59:35] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 17:01:20] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 17:01:31] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-22 17:01:31] FILE INFO video_file {"name":"","type":"","tmp_name":"","error":4,"size":0}
+[2025-09-22 17:01:31] File Check
+[2025-09-22 17:01:39] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-22 17:01:39] FILE INFO video_file {"name":"7NVTT_20250824.mp4","type":"video/mp4","tmp_name":"/tmp/phpZBBvz8","error":0,"size":98907}
+[2025-09-22 17:01:39] File Check
+[2025-09-22 17:01:40] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 17:05:00] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-22 17:05:00] FILE INFO video_file {"name":"7NVTT_20250811.mp4","type":"video/mp4","tmp_name":"/tmp/phpqtYFjd","error":0,"size":404707}
+[2025-09-22 17:05:00] File Check
+[2025-09-22 17:05:01] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 17:06:25] api.php called {"action":"update_ad","method":"POST"}
+[2025-09-22 17:06:26] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 17:06:49] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-22 17:06:51] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-22 17:06:55] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-22 17:13:41] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 17:14:04] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-22 17:14:04] FILE INFO video_file {"name":"7NVTT_20250811.mp4","type":"video/mp4","tmp_name":"/tmp/php6XhX4G","error":0,"size":404707}
+[2025-09-22 17:14:04] File Check
+[2025-09-22 17:14:05] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 17:25:01] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-22 17:25:04] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 17:25:09] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-22 17:25:10] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 17:25:13] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-22 17:25:13] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 17:25:17] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-22 17:25:17] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 17:25:21] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-22 17:25:21] api.php called {"action":"get_info","method":"GET"}
+[2025-09-22 17:25:47] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-22 17:25:47] FILE INFO video_file {"name":"7NVTT_20250824.mp4","type":"video/mp4","tmp_name":"/tmp/phpuivrf1","error":0,"size":98907}
+[2025-09-22 17:25:47] File Check
+[2025-09-22 17:25:48] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 13:47:14] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-23 13:48:07] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 13:48:28] api.php called {"action":"update_ad","method":"POST"}
+[2025-09-23 13:48:29] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 13:48:58] api.php called {"action":"update_ad","method":"POST"}
+[2025-09-23 13:48:59] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 14:20:31] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-23 14:20:35] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 14:21:29] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-23 14:21:29] FILE INFO video_file {"name":"7NVTT_20250811.mp4","type":"video/mp4","tmp_name":"/tmp/phpyIOo90","error":0,"size":404707}
+[2025-09-23 14:21:29] File Check
+[2025-09-23 14:21:31] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 14:38:17] api.php called {"action":"update_ad","method":"POST"}
+[2025-09-23 14:38:18] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 14:44:31] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-23 14:44:35] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 14:45:13] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-23 14:45:13] FILE INFO video_file {"name":"Download.mp4","type":"video/mp4","tmp_name":"/tmp/php3rqdrp","error":0,"size":3256201}
+[2025-09-23 14:45:13] File Check
+[2025-09-23 14:45:14] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 14:46:45] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-23 14:46:45] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 14:49:49] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-23 14:49:58] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 14:50:21] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-23 14:50:27] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-23 14:50:27] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 14:51:47] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-23 14:51:47] FILE INFO video_file {"name":"Download.mp4","type":"video/mp4","tmp_name":"/tmp/phpq9Ogx2","error":0,"size":3256201}
+[2025-09-23 14:51:47] File Check
+[2025-09-23 14:51:48] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 14:51:50] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-23 14:54:06] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 14:54:40] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-23 14:54:40] FILE INFO video_file {"name":"","type":"","tmp_name":"","error":4,"size":0}
+[2025-09-23 14:54:40] File Check
+[2025-09-23 14:54:49] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-23 14:54:49] FILE INFO video_file {"name":"Download.mp4","type":"video/mp4","tmp_name":"/tmp/php2szw2Z","error":0,"size":3256201}
+[2025-09-23 14:54:49] File Check
+[2025-09-23 14:54:50] api.php called {"action":"get_info","method":"GET"}
+[2025-09-23 14:55:15] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-23 14:55:16] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-23 14:55:17] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-23 14:55:19] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-23 14:55:49] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-23 14:55:53] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-24 16:28:25] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-24 16:28:30] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 16:28:38] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 16:28:42] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 16:28:45] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 16:29:03] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-24 16:29:04] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 16:29:07] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 16:29:09] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-24 16:29:10] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 16:29:12] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 16:36:06] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-24 16:36:06] FILE INFO video_file {"name":"45013.mp4","type":"video/mp4","tmp_name":"/tmp/php8vv2Zo","error":0,"size":3256201}
+[2025-09-24 16:36:06] File Check
+[2025-09-24 16:36:08] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 16:36:16] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 16:36:17] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 16:44:22] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-24 16:44:22] FILE INFO video_file {"name":"45013.mp4","type":"video/mp4","tmp_name":"/tmp/phpyKPRl8","error":0,"size":3256201}
+[2025-09-24 16:44:22] File Check
+[2025-09-24 16:44:23] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 16:47:41] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-24 16:47:41] FILE INFO video_file {"name":"test1.mp4","type":"video/mp4","tmp_name":"/tmp/php9CaxA7","error":0,"size":3256201}
+[2025-09-24 16:47:41] File Check
+[2025-09-24 16:47:43] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 16:52:34] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-24 16:52:37] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 19:56:28] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-24 19:56:31] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 19:56:53] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-24 19:57:42] api.php called {"action":"update_ad","method":"POST"}
+[2025-09-24 19:57:43] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 19:57:48] api.php called {"action":"update_ad","method":"POST"}
+[2025-09-24 19:57:49] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 19:58:13] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-24 19:58:15] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 19:58:22] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 19:58:28] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-24 19:58:49] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-24 19:58:51] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 19:58:56] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-24 19:58:56] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 19:58:58] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-24 19:58:58] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 19:59:00] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-24 19:59:00] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 19:59:02] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-24 19:59:02] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 19:59:05] api.php called {"action":"delete_ad","method":"POST"}
+[2025-09-24 19:59:05] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 20:00:01] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-24 20:00:01] FILE INFO video_file {"name":"Untitled video - Made with Clipchamp.mp4","type":"video/mp4","tmp_name":"/tmp/phpjjevZQ","error":0,"size":47325246}
+[2025-09-24 20:00:01] File Check
+[2025-09-24 20:00:02] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 20:00:04] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 20:00:06] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 20:00:10] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-09-24 20:00:11] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 20:10:44] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-24 20:10:47] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 20:11:24] api.php called {"action":"update_ad","method":"POST"}
+[2025-09-24 20:11:26] api.php called {"action":"get_info","method":"GET"}
+[2025-09-24 20:11:29] api.php called {"action":"get_info","method":"GET"}
+[2025-09-25 11:21:06] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-25 11:21:09] api.php called {"action":"get_info","method":"GET"}
+[2025-09-25 11:22:45] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-25 11:22:45] FILE INFO video_file {"name":"45011.mp4","type":"video/mp4","tmp_name":"/tmp/phpBzFLhW","error":0,"size":404707}
+[2025-09-25 11:22:45] File Check
+[2025-09-25 11:22:48] api.php called {"action":"get_info","method":"GET"}
+[2025-09-25 11:31:08] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-25 11:31:08] FILE INFO video_file {"name":"45011.mp4","type":"video/mp4","tmp_name":"/tmp/phplsmdx8","error":0,"size":404707}
+[2025-09-25 11:31:08] File Check
+[2025-09-25 11:31:10] api.php called {"action":"get_info","method":"GET"}
+[2025-09-25 12:08:31] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-25 12:08:35] api.php called {"action":"get_info","method":"GET"}
+[2025-09-25 14:42:21] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-25 14:42:21] FILE INFO video_file {"name":"Big_Buck_Bunny_1080_10s_1MB.mp4","type":"video/mp4","tmp_name":"/tmp/phpd0Funt","error":0,"size":1046987}
+[2025-09-25 14:42:21] File Check
+[2025-09-25 14:42:22] api.php called {"action":"get_info","method":"GET"}
+[2025-09-25 16:28:07] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-25 16:28:07] FILE INFO video_file {"name":"output.mp4","type":"video/mp4","tmp_name":"/tmp/phpYHmKfi","error":0,"size":198782}
+[2025-09-25 16:28:07] File Check
+[2025-09-25 16:28:10] api.php called {"action":"get_info","method":"GET"}
+[2025-09-25 16:32:20] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-25 16:32:20] FILE INFO video_file {"name":"output_h264.mp4","type":"video/mp4","tmp_name":"/tmp/phpwgCG3s","error":0,"size":279613}
+[2025-09-25 16:32:20] File Check
+[2025-09-25 16:32:22] api.php called {"action":"get_info","method":"GET"}
+[2025-09-25 18:50:47] api.php called {"action":"add_ad","method":"POST"}
+[2025-09-25 18:50:47] FILE INFO video_file {"name":"output_h264.mp4","type":"video/mp4","tmp_name":"/tmp/phpIzcTym","error":0,"size":279613}
+[2025-09-25 18:50:47] File Check
+[2025-09-25 18:50:49] api.php called {"action":"get_info","method":"GET"}
+[2025-09-26 20:19:42] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-26 20:19:45] api.php called {"action":"get_info","method":"GET"}
+[2025-09-26 20:20:54] api.php called {"action":"get_accounts","method":"GET"}
+[2025-09-26 20:20:57] api.php called {"action":"get_info","method":"GET"}
+[2025-10-03 22:43:15] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-03 22:43:18] api.php called {"action":"get_info","method":"GET"}
+[2025-10-03 22:45:18] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-03 22:45:21] api.php called {"action":"get_info","method":"GET"}
+[2025-10-03 22:45:42] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-03 22:45:42] FILE INFO video_file {"name":"output_h264.mp4","type":"video/mp4","tmp_name":"/tmp/phpMcTmBs","error":0,"size":279613}
+[2025-10-03 22:45:42] File Check
+[2025-10-03 22:45:44] api.php called {"action":"get_info","method":"GET"}
+[2025-10-03 22:51:08] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-03 22:51:10] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-03 22:51:16] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-03 22:51:17] api.php called {"action":"get_info","method":"GET"}
+[2025-10-03 22:51:34] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-03 22:51:34] FILE INFO video_file {"name":"output_h264.mp4","type":"video/mp4","tmp_name":"/tmp/phpXenvKD","error":0,"size":279613}
+[2025-10-03 22:51:34] File Check
+[2025-10-03 22:51:36] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 17:02:52] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-06 17:03:02] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 17:05:51] api.php called {"action":"","method":"POST"}
+[2025-10-06 17:05:51] Unknown action {"action":""}
+[2025-10-06 17:05:55] api.php called {"action":"","method":"POST"}
+[2025-10-06 17:05:55] Unknown action {"action":""}
+[2025-10-06 17:07:51] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-06 17:07:51] FILE INFO video_file {"name":"vcpserver.net.ua - Google Chrome 2025-09-04 12-24-12.mp4","type":"video/mp4","tmp_name":"/tmp/phpQRQmFx","error":0,"size":62390928}
+[2025-10-06 17:07:51] File Check
+[2025-10-06 17:07:55] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 17:07:55] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-06 17:07:55] FILE INFO video_file {"name":"vcpserver.net.ua - Google Chrome 2025-09-04 12-24-12.mp4","type":"video/mp4","tmp_name":"/tmp/phpmQw2BM","error":0,"size":62390928}
+[2025-10-06 17:07:55] File Check
+[2025-10-06 17:08:00] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 17:08:19] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-10-06 17:08:23] api.php called {"action":"delete_ad","method":"POST"}
+[2025-10-06 17:08:23] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 17:08:40] api.php called {"action":"update_ad","method":"POST"}
+[2025-10-06 17:08:41] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 17:50:46] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-06 17:50:52] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 17:52:53] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-06 17:52:53] FILE INFO video_file {"name":"vcpserver.net.ua - Google Chrome 2025-09-04 12-24-12.mp4","type":"video/mp4","tmp_name":"/tmp/phpa854tA","error":0,"size":62390928}
+[2025-10-06 17:52:53] File Check
+[2025-10-06 17:52:55] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-06 17:52:55] FILE INFO video_file {"name":"vcpserver.net.ua - Google Chrome 2025-09-04 12-24-12.mp4","type":"video/mp4","tmp_name":"/tmp/phpdFIENJ","error":0,"size":62390928}
+[2025-10-06 17:52:55] File Check
+[2025-10-06 17:52:56] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 17:52:57] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 17:56:20] api.php called {"action":"delete_ad","method":"POST"}
+[2025-10-06 17:56:20] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 17:56:22] api.php called {"action":"delete_ad","method":"POST"}
+[2025-10-06 17:56:22] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 17:56:25] api.php called {"action":"delete_ad","method":"POST"}
+[2025-10-06 17:56:25] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:12:40] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-06 18:12:45] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-06 18:12:48] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-06 18:12:54] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:13:03] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-06 18:13:09] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:13:15] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-06 18:13:19] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:13:28] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-06 18:13:31] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:15:28] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-06 18:15:28] FILE INFO video_file {"name":"vcpserver.net.ua - Google Chrome 2025-09-04 16-26-05.mp4","type":"video/mp4","tmp_name":"/tmp/phpssyHxf","error":0,"size":48947174}
+[2025-10-06 18:15:28] File Check
+[2025-10-06 18:15:31] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:15:32] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-06 18:15:32] FILE INFO video_file {"name":"vcpserver.net.ua - Google Chrome 2025-09-04 16-26-05.mp4","type":"video/mp4","tmp_name":"/tmp/phpARs1qm","error":0,"size":48947174}
+[2025-10-06 18:15:32] File Check
+[2025-10-06 18:15:32] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:21:43] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-06 18:21:48] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-06 18:21:53] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:22:16] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-06 18:22:16] FILE INFO video_file {"name":"","type":"","tmp_name":"","error":4,"size":0}
+[2025-10-06 18:22:16] File Check
+[2025-10-06 18:22:42] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-06 18:22:42] FILE INFO video_file {"name":"vcpserver.net.ua - Google Chrome 2025-09-04 16-26-05.mp4","type":"video/mp4","tmp_name":"/tmp/php7kAN8g","error":0,"size":48947174}
+[2025-10-06 18:22:42] File Check
+[2025-10-06 18:22:44] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:22:45] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-06 18:22:45] FILE INFO video_file {"name":"vcpserver.net.ua - Google Chrome 2025-09-04 16-26-05.mp4","type":"video/mp4","tmp_name":"/tmp/php97nUEt","error":0,"size":48947174}
+[2025-10-06 18:22:45] File Check
+[2025-10-06 18:22:46] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:27:46] api.php called {"action":"delete_ad","method":"POST"}
+[2025-10-06 18:27:46] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:27:48] api.php called {"action":"delete_ad","method":"POST"}
+[2025-10-06 18:27:49] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:27:51] api.php called {"action":"delete_ad","method":"POST"}
+[2025-10-06 18:27:51] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:27:54] api.php called {"action":"delete_ad","method":"POST"}
+[2025-10-06 18:27:54] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:28:53] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-06 18:28:58] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:29:52] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-06 18:29:52] FILE INFO video_file {"name":"vcpserver.net.ua - Google Chrome 2025-09-04 12-24-12.mp4","type":"video/mp4","tmp_name":"/tmp/phpAaZZbL","error":0,"size":62390928}
+[2025-10-06 18:29:52] File Check
+[2025-10-06 18:29:55] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-06 18:29:55] FILE INFO video_file {"name":"vcpserver.net.ua - Google Chrome 2025-09-04 12-24-12.mp4","type":"video/mp4","tmp_name":"/tmp/phpZwQPMS","error":0,"size":62390928}
+[2025-10-06 18:29:55] File Check
+[2025-10-06 18:29:56] api.php called {"action":"get_info","method":"GET"}
+[2025-10-06 18:29:57] api.php called {"action":"get_info","method":"GET"}
+[2025-10-07 09:19:26] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-07 09:19:34] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-07 09:19:36] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-07 09:19:38] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-07 09:19:38] api.php called {"action":"get_info","method":"GET"}
+[2025-10-07 09:19:40] api.php called {"action":"get_info","method":"GET"}
+[2025-10-07 09:19:44] api.php called {"action":"get_info","method":"GET"}
+[2025-10-07 09:19:45] api.php called {"action":"get_info","method":"GET"}
+[2025-10-07 09:19:53] api.php called {"action":"get_info","method":"GET"}
+[2025-10-07 09:19:59] api.php called {"action":"get_info","method":"GET"}
+[2025-10-07 09:20:00] api.php called {"action":"get_info","method":"GET"}
+[2025-10-07 09:23:32] api.php called {"action":"delete_ad","method":"POST"}
+[2025-10-07 09:23:32] api.php called {"action":"get_info","method":"GET"}
+[2025-10-07 09:23:35] api.php called {"action":"delete_ad","method":"POST"}
+[2025-10-07 09:23:35] api.php called {"action":"get_info","method":"GET"}
+[2025-10-07 09:24:59] api.php called {"action":"add_ad","method":"POST"}
+[2025-10-07 09:24:59] FILE INFO video_file {"name":"vcpserver.net.ua - Google Chrome 2025-09-04 12-24-12.mp4","type":"video/mp4","tmp_name":"/tmp/phpZyMzSp","error":0,"size":62390928}
+[2025-10-07 09:24:59] File Check
+[2025-10-07 09:25:02] api.php called {"action":"get_info","method":"GET"}
+[2025-10-07 09:45:20] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-07 09:45:20] api.php called {"action":"get_accounts","method":"GET"}
+[2025-10-07 09:45:21] api.php called {"action":"get_info","method":"GET"}
+[2025-10-07 09:45:22] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 11:06:23] api.php called {"action":"get_accounts","method":"GET"}
+[2025-11-08 11:06:26] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 11:06:47] api.php called {"action":"update_ad","method":"POST"}
+[2025-11-08 11:06:48] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 11:07:14] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-11-08 11:07:18] api.php called {"action":"get_accounts","method":"GET"}
+[2025-11-08 11:07:21] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 11:07:34] api.php called {"action":"get_accounts","method":"GET"}
+[2025-11-08 11:07:36] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 11:08:33] api.php called {"action":"update_ad","method":"POST"}
+[2025-11-08 11:08:35] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 11:08:53] api.php called {"action":"update_ad","method":"POST"}
+[2025-11-08 11:08:55] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 11:52:11] api.php called {"action":"get_accounts","method":"GET"}
+[2025-11-08 11:52:13] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 11:52:23] api.php called {"action":"update_ad","method":"POST"}
+[2025-11-08 11:52:24] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 11:52:48] api.php called {"action":"get_accounts","method":"GET"}
+[2025-11-08 11:52:51] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 11:53:02] api.php called {"action":"reorder_ads","method":"POST"}
+[2025-11-08 11:53:30] api.php called {"action":"update_ad","method":"POST"}
+[2025-11-08 11:53:31] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 11:59:58] api.php called {"action":"update_ad","method":"POST"}
+[2025-11-08 11:59:59] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 12:00:39] api.php called {"action":"update_ad","method":"POST"}
+[2025-11-08 12:00:40] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 12:13:30] api.php called {"action":"get_accounts","method":"GET"}
+[2025-11-08 12:13:31] api.php called {"action":"get_info","method":"GET"}
+[2025-11-08 12:13:42] api.php called {"action":"update_ad","method":"POST"}
+[2025-11-08 12:13:43] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 10:37:52] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-26 10:37:56] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 10:40:36] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 10:40:36] FILE INFO video_file {"name":"Видео WhatsApp 2025-11-17 в 16.55.47_900c839f.mp4","type":"video/mp4","tmp_name":"/tmp/php8getcI","error":0,"size":9078384}
+[2025-12-26 10:40:36] File Check
+[2025-12-26 10:40:37] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 10:43:57] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-26 10:44:03] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-26 10:44:11] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 10:45:13] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 10:45:13] FILE INFO video_file {"name":"AnyConv.com__Снимок экрана 2025-12-17 112104.mp4","type":"video/mp4","tmp_name":"/tmp/phpgdaGWc","error":0,"size":0}
+[2025-12-26 10:45:13] File Check
+[2025-12-26 10:45:14] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 10:46:10] api.php called {"action":"update_ad","method":"POST"}
+[2025-12-26 10:46:11] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 12:51:13] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-26 12:52:08] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-26 12:52:15] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-26 12:52:16] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 12:52:18] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 12:54:44] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 12:54:44] FILE INFO video_file {"name":"Осінь у Херсоні.mp4","type":"video/mp4","tmp_name":"/tmp/phphWetOp","error":0,"size":9001424}
+[2025-12-26 12:54:44] File Check
+[2025-12-26 12:54:46] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 12:57:59] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 12:57:59] FILE INFO video_file {"name":"nature-doroga-razmetka-povorot-derevya-les-156364.jpeg","type":"image/jpeg","tmp_name":"/tmp/phpaNF22l","error":0,"size":6612768}
+[2025-12-26 12:57:59] File Check
+[2025-12-26 12:58:00] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 13:00:02] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 13:00:46] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 13:00:46] FILE INFO video_file {"name":"earth-fall-forest-nature-path-sunbeam-tree-798403.jpeg","type":"image/jpeg","tmp_name":"/tmp/phph7VfYo","error":0,"size":7641034}
+[2025-12-26 13:00:46] File Check
+[2025-12-26 13:00:47] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 13:04:21] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 13:04:21] FILE INFO video_file {"name":"0-02-05-798032d424c9be73b9e254d5511cd0abf0da310c0cd0c3a0190175ca002c3a04_8dcb57a5027032ab.jpg","type":"image/jpeg","tmp_name":"/tmp/php6zXmWw","error":0,"size":208819}
+[2025-12-26 13:04:21] File Check
+[2025-12-26 13:04:23] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 13:06:34] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 13:06:34] FILE INFO video_file {"name":"Видео WhatsApp 2025-11-17 в 16.55.47_900c839f.mp4","type":"video/mp4","tmp_name":"/tmp/phpYfFNtP","error":0,"size":9078384}
+[2025-12-26 13:06:34] File Check
+[2025-12-26 13:06:37] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 13:07:55] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 13:07:55] FILE INFO video_file {"name":"Предварительная композиция 1.mp4","type":"video/mp4","tmp_name":"/tmp/phpocndU2","error":0,"size":3305435}
+[2025-12-26 13:07:55] File Check
+[2025-12-26 13:07:59] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 13:11:11] api.php called {"action":"update_ad","method":"POST"}
+[2025-12-26 13:11:14] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:34:58] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 14:34:58] FILE INFO video_file {"name":"1649831-uhd_3840_2160_30fps.mp4","type":"video/mp4","tmp_name":"/tmp/phptgGQ3p","error":0,"size":74403814}
+[2025-12-26 14:34:58] File Check
+[2025-12-26 14:34:59] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:38:56] api.php called {"action":"","method":"POST"}
+[2025-12-26 14:38:56] Unknown action {"action":""}
+[2025-12-26 14:39:00] api.php called {"action":"","method":"POST"}
+[2025-12-26 14:39:00] Unknown action {"action":""}
+[2025-12-26 14:39:01] api.php called {"action":"","method":"POST"}
+[2025-12-26 14:39:01] Unknown action {"action":""}
+[2025-12-26 14:39:03] api.php called {"action":"","method":"POST"}
+[2025-12-26 14:39:03] Unknown action {"action":""}
+[2025-12-26 14:39:17] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 14:39:19] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 14:39:20] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:39:23] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 14:39:23] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 14:39:25] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:39:39] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-26 14:39:40] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:39:54] api.php called {"action":"","method":"POST"}
+[2025-12-26 14:39:54] Unknown action {"action":""}
+[2025-12-26 14:40:14] api.php called {"action":"","method":"POST"}
+[2025-12-26 14:40:14] Unknown action {"action":""}
+[2025-12-26 14:40:22] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-26 14:40:24] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:40:26] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 14:40:26] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:40:28] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 14:40:29] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:40:30] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 14:40:30] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:40:32] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 14:40:32] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:40:33] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 14:40:33] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:40:34] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 14:40:34] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:40:39] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 14:40:39] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:41:00] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 14:41:00] FILE INFO video_file {"name":"3571264-uhd_3840_2160_30fps.mp4","type":"video/mp4","tmp_name":"/tmp/phpkUghjC","error":0,"size":56038183}
+[2025-12-26 14:41:00] File Check
+[2025-12-26 14:41:09] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 14:44:13] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 14:44:13] FILE INFO video_file {"name":"6394054-uhd_4096_2048_24fps.mp4","type":"video/mp4","tmp_name":"/tmp/php8pByyb","error":0,"size":32407849}
+[2025-12-26 14:44:13] File Check
+[2025-12-26 14:44:15] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 17:53:29] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-26 17:53:30] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-26 17:53:36] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 17:54:27] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 17:54:27] FILE INFO video_file {"name":"0-02-05-c5c5c1f1326376f03bddf22c6725c6de28213d7bdcbec3869c2e5a9b7a01275c_a9742e7c50b99805.mp4","type":"video/mp4","tmp_name":"/tmp/phpwBbbrK","error":0,"size":74403814}
+[2025-12-26 17:54:27] File Check
+[2025-12-26 17:55:05] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 17:59:54] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 17:59:54] FILE INFO video_file {"name":"0-02-05-0c730e1d88d3217eaf783f1c4f4a339c816723ca21419b5888ea4d43abbb88f3_ffda16ed1e5c5f4.mp4","type":"video/mp4","tmp_name":"/tmp/phpufNPBd","error":0,"size":32407849}
+[2025-12-26 17:59:54] File Check
+[2025-12-26 18:00:08] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 18:00:08] FILE INFO video_file {"name":"0-02-05-0c730e1d88d3217eaf783f1c4f4a339c816723ca21419b5888ea4d43abbb88f3_ffda16ed1e5c5f4.mp4","type":"video/mp4","tmp_name":"/tmp/php3FiVPo","error":0,"size":32407849}
+[2025-12-26 18:00:08] File Check
+[2025-12-26 18:00:08] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:08] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:09] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 18:00:09] FILE INFO video_file {"name":"0-02-05-0c730e1d88d3217eaf783f1c4f4a339c816723ca21419b5888ea4d43abbb88f3_ffda16ed1e5c5f4.mp4","type":"video/mp4","tmp_name":"/tmp/phpQ4ZbEr","error":0,"size":32407849}
+[2025-12-26 18:00:09] File Check
+[2025-12-26 18:00:09] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:10] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 18:00:10] FILE INFO video_file {"name":"0-02-05-0c730e1d88d3217eaf783f1c4f4a339c816723ca21419b5888ea4d43abbb88f3_ffda16ed1e5c5f4.mp4","type":"video/mp4","tmp_name":"/tmp/phprPK60A","error":0,"size":32407849}
+[2025-12-26 18:00:10] File Check
+[2025-12-26 18:00:10] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:14] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 18:00:14] FILE INFO video_file {"name":"0-02-05-0c730e1d88d3217eaf783f1c4f4a339c816723ca21419b5888ea4d43abbb88f3_ffda16ed1e5c5f4.mp4","type":"video/mp4","tmp_name":"/tmp/phpRw91Q4","error":0,"size":32407849}
+[2025-12-26 18:00:14] File Check
+[2025-12-26 18:00:14] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:14] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 18:00:14] FILE INFO video_file {"name":"0-02-05-0c730e1d88d3217eaf783f1c4f4a339c816723ca21419b5888ea4d43abbb88f3_ffda16ed1e5c5f4.mp4","type":"video/mp4","tmp_name":"/tmp/phpMPKR3v","error":0,"size":32407849}
+[2025-12-26 18:00:14] File Check
+[2025-12-26 18:00:14] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:16] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 18:00:16] FILE INFO video_file {"name":"0-02-05-0c730e1d88d3217eaf783f1c4f4a339c816723ca21419b5888ea4d43abbb88f3_ffda16ed1e5c5f4.mp4","type":"video/mp4","tmp_name":"/tmp/phpqoR4Cz","error":0,"size":32407849}
+[2025-12-26 18:00:16] File Check
+[2025-12-26 18:00:20] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:23] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 18:00:23] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:25] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 18:00:25] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:26] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 18:00:26] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:26] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 18:00:27] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:27] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 18:00:27] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:28] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 18:00:28] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:30] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 18:00:30] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:31] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 18:00:31] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:32] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 18:00:32] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:33] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-26 18:00:33] api.php called {"action":"get_info","method":"GET"}
+[2025-12-26 18:00:54] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 18:00:54] FILE INFO video_file {"name":"","type":"","tmp_name":"","error":4,"size":0}
+[2025-12-26 18:00:54] File Check
+[2025-12-26 18:02:17] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-26 18:02:17] FILE INFO video_file {"name":"0-02-05-0c730e1d88d3217eaf783f1c4f4a339c816723ca21419b5888ea4d43abbb88f3_ffda16ed1e5c5f4.mp4","type":"video/mp4","tmp_name":"/tmp/phpoSnMww","error":0,"size":32407849}
+[2025-12-26 18:02:17] File Check
+[2025-12-26 18:02:18] api.php called {"action":"get_info","method":"GET"}
+[2025-12-28 12:06:30] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-28 12:06:30] FILE INFO video_file {"name":"0-02-05-0c730e1d88d3217eaf783f1c4f4a339c816723ca21419b5888ea4d43abbb88f3_ffda16ed1e5c5f4.mp4","type":"video/mp4","tmp_name":"/tmp/phprMQbtt","error":0,"size":32407849}
+[2025-12-28 12:06:30] File Check
+[2025-12-28 12:06:32] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-28 12:06:32] FILE INFO video_file {"name":"0-02-05-0c730e1d88d3217eaf783f1c4f4a339c816723ca21419b5888ea4d43abbb88f3_ffda16ed1e5c5f4.mp4","type":"video/mp4","tmp_name":"/tmp/phpOen8PE","error":0,"size":32407849}
+[2025-12-28 12:06:32] File Check
+[2025-12-28 12:06:34] api.php called {"action":"get_info","method":"GET"}
+[2025-12-28 12:06:35] api.php called {"action":"get_info","method":"GET"}
+[2025-12-28 12:06:56] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-28 12:06:56] api.php called {"action":"get_info","method":"GET"}
+[2025-12-28 12:07:05] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-28 12:07:07] api.php called {"action":"get_info","method":"GET"}
+[2025-12-28 12:08:22] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-28 12:08:22] FILE INFO video_file {"name":"","type":"","tmp_name":"","error":4,"size":0}
+[2025-12-28 12:08:22] File Check
+[2025-12-28 12:08:32] api.php called {"action":"","method":"POST"}
+[2025-12-28 12:08:32] Unknown action {"action":""}
+[2025-12-28 12:08:38] api.php called {"action":"","method":"POST"}
+[2025-12-28 12:08:38] Unknown action {"action":""}
+[2025-12-28 12:08:59] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-28 12:09:00] api.php called {"action":"get_info","method":"GET"}
+[2025-12-28 12:09:17] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-28 12:09:17] FILE INFO video_file {"name":"","type":"","tmp_name":"","error":4,"size":0}
+[2025-12-28 12:09:17] File Check
+[2025-12-28 12:09:26] api.php called {"action":"","method":"POST"}
+[2025-12-28 12:09:26] Unknown action {"action":""}
+[2025-12-28 12:09:27] api.php called {"action":"","method":"POST"}
+[2025-12-28 12:09:27] Unknown action {"action":""}
+[2025-12-28 12:09:46] api.php called {"action":"","method":"POST"}
+[2025-12-28 12:09:46] Unknown action {"action":""}
+[2025-12-28 12:10:48] api.php called {"action":"","method":"POST"}
+[2025-12-28 12:10:48] Unknown action {"action":""}
+[2025-12-28 12:10:49] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-28 12:10:49] FILE INFO video_file {"name":"0-02-05-c5c5c1f1326376f03bddf22c6725c6de28213d7bdcbec3869c2e5a9b7a01275c_a9742e7c50b99805.mp4","type":"","tmp_name":"","error":3,"size":0}
+[2025-12-28 12:10:49] File Check
+[2025-12-28 12:10:49] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-28 12:10:49] FILE INFO video_file {"name":"0-02-05-c5c5c1f1326376f03bddf22c6725c6de28213d7bdcbec3869c2e5a9b7a01275c_a9742e7c50b99805.mp4","type":"","tmp_name":"","error":3,"size":0}
+[2025-12-28 12:10:49] File Check
+[2025-12-28 12:10:49] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-28 12:10:49] FILE INFO video_file {"name":"0-02-05-c5c5c1f1326376f03bddf22c6725c6de28213d7bdcbec3869c2e5a9b7a01275c_a9742e7c50b99805.mp4","type":"","tmp_name":"","error":3,"size":0}
+[2025-12-28 12:10:49] File Check
+[2025-12-28 12:10:57] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-28 12:10:57] api.php called {"action":"get_accounts","method":"GET"}
+[2025-12-28 12:10:58] api.php called {"action":"get_info","method":"GET"}
+[2025-12-28 12:11:17] api.php called {"action":"","method":"POST"}
+[2025-12-28 12:11:17] Unknown action {"action":""}
+[2025-12-28 12:11:24] api.php called {"action":"","method":"POST"}
+[2025-12-28 12:11:24] Unknown action {"action":""}
+[2025-12-28 12:11:24] api.php called {"action":"","method":"POST"}
+[2025-12-28 12:11:24] Unknown action {"action":""}
+[2025-12-28 12:11:39] api.php called {"action":"","method":"POST"}
+[2025-12-28 12:11:39] Unknown action {"action":""}
+[2025-12-28 12:11:40] api.php called {"action":"","method":"POST"}
+[2025-12-28 12:11:40] Unknown action {"action":""}
+[2025-12-28 12:11:51] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-28 12:11:51] api.php called {"action":"get_info","method":"GET"}
+[2025-12-28 12:11:53] api.php called {"action":"delete_ad","method":"POST"}
+[2025-12-28 12:11:53] api.php called {"action":"get_info","method":"GET"}
+[2025-12-28 12:11:54] api.php called {"action":"add_ad","method":"POST"}
+[2025-12-28 12:11:54] FILE INFO video_file {"name":"","type":"","tmp_name":"","error":4,"size":0}
+[2025-12-28 12:11:54] File Check
+[2025-12-28 12:12:25] api.php called {"action":"","method":"POST"}
+[2025-12-28 12:12:25] Unknown action {"action":""}
+[2026-01-03 13:20:18] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-03 13:20:22] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 13:21:22] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-03 13:21:22] FILE INFO video_file {"name":"0-02-05-c5c5c1f1326376f03bddf22c6725c6de28213d7bdcbec3869c2e5a9b7a01275c_a9742e7c50b99805.mp4","type":"video/mp4","tmp_name":"/tmp/phpZMD9X9","error":0,"size":74403814}
+[2026-01-03 13:21:22] File Check
+[2026-01-03 13:21:24] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 13:21:24] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-03 13:21:24] FILE INFO video_file {"name":"0-02-05-c5c5c1f1326376f03bddf22c6725c6de28213d7bdcbec3869c2e5a9b7a01275c_a9742e7c50b99805.mp4","type":"video/mp4","tmp_name":"/tmp/phpsHgM5X","error":0,"size":74403814}
+[2026-01-03 13:21:24] File Check
+[2026-01-03 13:21:26] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 13:22:23] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-03 13:22:23] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 13:22:46] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-03 13:22:47] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 15:56:45] api.php called {"action":"","method":"POST"}
+[2026-01-03 15:56:45] Unknown action {"action":""}
+[2026-01-03 15:56:58] api.php called {"action":"","method":"POST"}
+[2026-01-03 15:56:58] Unknown action {"action":""}
+[2026-01-03 15:57:09] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-03 15:57:09] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-03 15:57:13] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 15:57:51] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-03 15:57:51] FILE INFO video_file {"name":"0-02-05-c5c5c1f1326376f03bddf22c6725c6de28213d7bdcbec3869c2e5a9b7a01275c_a9742e7c50b99805.mp4","type":"video/mp4","tmp_name":"/tmp/phpjrA0AP","error":0,"size":74403814}
+[2026-01-03 15:57:51] File Check
+[2026-01-03 15:57:53] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 15:58:02] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-03 15:58:02] FILE INFO video_file {"name":"0-02-05-c5c5c1f1326376f03bddf22c6725c6de28213d7bdcbec3869c2e5a9b7a01275c_a9742e7c50b99805.mp4","type":"video/mp4","tmp_name":"/tmp/phpfn13Mr","error":0,"size":74403814}
+[2026-01-03 15:58:02] File Check
+[2026-01-03 15:58:02] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 15:59:24] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-03 15:59:24] FILE INFO video_file {"name":"0-02-05-c5c5c1f1326376f03bddf22c6725c6de28213d7bdcbec3869c2e5a9b7a01275c_a9742e7c50b99805.mp4","type":"video/mp4","tmp_name":"/tmp/phpObJ8j9","error":0,"size":74403814}
+[2026-01-03 15:59:24] File Check
+[2026-01-03 15:59:27] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 15:59:45] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-03 15:59:45] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 15:59:47] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-03 15:59:47] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 15:59:50] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-03 15:59:50] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 15:59:52] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-03 15:59:52] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 16:06:35] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-03 16:06:42] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 16:25:34] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-03 16:25:34] FILE INFO video_file {"name":"123_h264.mp4","type":"video/mp4","tmp_name":"/tmp/php9WVmTw","error":0,"size":2941807}
+[2026-01-03 16:25:34] File Check
+[2026-01-03 16:25:35] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 16:30:47] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-03 16:30:47] FILE INFO video_file {"name":"1234_hvc1.mp4","type":"video/mp4","tmp_name":"/tmp/phpkSilii","error":0,"size":12144561}
+[2026-01-03 16:30:47] File Check
+[2026-01-03 16:30:49] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 16:32:41] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-03 16:32:42] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-03 16:32:44] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 16:32:50] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 16:32:55] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-03 16:32:55] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 16:32:57] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-03 16:32:57] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 16:33:01] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 16:33:09] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-03 16:33:18] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-03 16:33:20] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 16:33:32] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 16:33:34] api.php called {"action":"get_info","method":"GET"}
+[2026-01-03 16:38:36] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-03 16:38:36] FILE INFO video_file {"name":"3_hvc1.mp4","type":"video/mp4","tmp_name":"/tmp/phpUz0wDr","error":0,"size":7149895}
+[2026-01-03 16:38:36] File Check
+[2026-01-03 16:38:37] api.php called {"action":"get_info","method":"GET"}
+[2026-01-05 14:35:33] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-05 14:35:35] api.php called {"action":"get_info","method":"GET"}
+[2026-01-05 14:35:57] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-05 14:35:57] FILE INFO video_file {"name":"2_hvc1.mp4","type":"video/mp4","tmp_name":"/tmp/phpSDhkSS","error":0,"size":1971681}
+[2026-01-05 14:35:57] File Check
+[2026-01-05 14:35:58] api.php called {"action":"get_info","method":"GET"}
+[2026-01-05 20:39:05] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-05 20:39:06] api.php called {"action":"get_info","method":"GET"}
+[2026-01-05 20:39:24] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-05 20:39:24] FILE INFO video_file {"name":"3_hvc1.mp4","type":"video/mp4","tmp_name":"/tmp/phpn4Qaoh","error":0,"size":7149895}
+[2026-01-05 20:39:24] File Check
+[2026-01-05 20:39:25] api.php called {"action":"get_info","method":"GET"}
+[2026-01-05 20:39:45] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-05 20:39:45] api.php called {"action":"get_info","method":"GET"}
+[2026-01-05 20:39:48] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-05 20:39:49] api.php called {"action":"get_info","method":"GET"}
+[2026-01-05 20:42:06] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-05 20:42:06] FILE INFO video_file {"name":"3_h264.mp4","type":"video/mp4","tmp_name":"/tmp/php9jrIqZ","error":0,"size":7358269}
+[2026-01-05 20:42:06] File Check
+[2026-01-05 20:42:07] api.php called {"action":"get_info","method":"GET"}
+[2026-01-05 20:42:21] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-05 20:42:21] api.php called {"action":"get_info","method":"GET"}
+[2026-01-06 18:19:30] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-06 18:19:32] api.php called {"action":"get_info","method":"GET"}
+[2026-01-06 18:20:09] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-06 18:20:09] FILE INFO video_file {"name":"stream.mp4","type":"video/mp4","tmp_name":"/tmp/phpDT4ra5","error":0,"size":90214326}
+[2026-01-06 18:20:09] File Check
+[2026-01-06 18:20:11] api.php called {"action":"get_info","method":"GET"}
+[2026-01-06 18:20:23] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-06 18:20:23] FILE INFO video_file {"name":"stream.mp4","type":"video/mp4","tmp_name":"/tmp/phpQJzW1Q","error":0,"size":90214326}
+[2026-01-06 18:20:23] File Check
+[2026-01-06 18:20:25] api.php called {"action":"get_info","method":"GET"}
+[2026-01-06 18:20:31] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-06 18:20:31] api.php called {"action":"get_info","method":"GET"}
+[2026-01-06 18:21:00] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-06 18:21:02] api.php called {"action":"get_info","method":"GET"}
+[2026-01-06 18:21:18] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-06 18:21:19] api.php called {"action":"get_info","method":"GET"}
+[2026-01-06 18:22:09] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-06 18:22:09] api.php called {"action":"get_info","method":"GET"}
+[2026-01-06 18:22:36] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-06 18:22:36] FILE INFO video_file {"name":"VideoAboutWialon.mp4","type":"video/mp4","tmp_name":"/tmp/phphAh4is","error":0,"size":25695488}
+[2026-01-06 18:22:36] File Check
+[2026-01-06 18:22:37] api.php called {"action":"get_info","method":"GET"}
+[2026-01-06 18:22:39] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-06 18:22:39] FILE INFO video_file {"name":"VideoAboutWialon.mp4","type":"video/mp4","tmp_name":"/tmp/phpbRe9DJ","error":0,"size":25695488}
+[2026-01-06 18:22:39] File Check
+[2026-01-06 18:22:39] api.php called {"action":"get_info","method":"GET"}
+[2026-01-06 18:22:45] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-06 18:22:45] api.php called {"action":"get_info","method":"GET"}
+[2026-01-06 18:53:56] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-06 18:54:17] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-06 18:54:20] api.php called {"action":"get_info","method":"GET"}
+[2026-01-06 18:57:05] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-06 19:06:28] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-06 19:06:42] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-06 19:06:45] api.php called {"action":"get_info","method":"GET"}
+[2026-01-06 19:06:45] get_info: ads query error Unknown column 'name' in 'field list'
+[2026-01-07 10:25:17] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 10:25:20] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:25:20] get_info: ads query error Unknown column 'name' in 'field list'
+[2026-01-07 10:27:18] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 10:27:18] FILE INFO video_file {"name":"20251121_1763730024_1763730146.mp4","type":"video/mp4","tmp_name":"/tmp/phpa3Ebvk","error":0,"size":12427191}
+[2026-01-07 10:27:18] File Check
+[2026-01-07 10:27:19] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:27:19] get_info: ads query error Unknown column 'name' in 'field list'
+[2026-01-07 10:27:25] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:27:25] get_info: ads query error Unknown column 'name' in 'field list'
+[2026-01-07 10:27:56] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 10:27:59] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:27:59] get_info: ads query error Unknown column 'name' in 'field list'
+[2026-01-07 10:28:24] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 10:28:24] FILE INFO video_file {"name":"20251121_1763730024_1763730146.mp4","type":"","tmp_name":"","error":3,"size":0}
+[2026-01-07 10:28:24] File Check
+[2026-01-07 10:29:07] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:29:07] get_info: ads query error Unknown column 'name' in 'field list'
+[2026-01-07 10:29:21] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:29:21] get_info: ads query error Unknown column 'name' in 'field list'
+[2026-01-07 10:29:50] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 10:29:50] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 10:29:51] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:29:51] get_info: ads query error Unknown column 'name' in 'field list'
+[2026-01-07 10:36:02] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:36:26] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 10:36:27] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 10:37:02] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 10:37:03] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:37:17] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 10:37:18] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:37:19] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 10:37:19] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:37:56] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 10:37:56] FILE INFO video_file {"name":"VideoAboutWialon.mp4","type":"video/mp4","tmp_name":"/tmp/phpLIXTPL","error":0,"size":25695488}
+[2026-01-07 10:37:56] File Check
+[2026-01-07 10:37:57] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:38:12] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:38:20] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 10:38:21] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:38:30] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 10:38:35] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 10:38:37] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:38:54] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:42:21] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 10:42:24] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 10:47:02] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 10:47:03] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:47:46] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 10:47:47] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:48:34] api.php called {"action":"","method":"POST"}
+[2026-01-07 10:48:34] Unknown action {"action":""}
+[2026-01-07 10:49:02] api.php called {"action":"","method":"POST"}
+[2026-01-07 10:49:02] Unknown action {"action":""}
+[2026-01-07 10:49:22] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 10:49:22] FILE INFO video_file {"name":"20251121_1763730024_1763730146.mp4","type":"video/mp4","tmp_name":"/tmp/phpWvCuw1","error":0,"size":12427191}
+[2026-01-07 10:49:22] File Check
+[2026-01-07 10:49:23] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:49:46] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:50:02] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 10:50:03] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:50:29] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 10:50:29] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:50:37] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 10:50:37] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:50:43] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 10:50:43] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:50:49] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 10:50:49] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:50:51] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 10:50:51] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:50:58] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 10:50:58] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:51:30] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:55:24] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 10:55:25] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:55:30] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 10:56:19] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 10:56:19] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:14:50] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 11:14:51] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:16:53] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 11:16:53] FILE INFO video_file {"name":"рибус 5.jpg","type":"image/jpeg","tmp_name":"/tmp/phpK3td5a","error":0,"size":4388}
+[2026-01-07 11:16:53] File Check
+[2026-01-07 11:16:54] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:16:58] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 11:16:58] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:17:08] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 11:17:08] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:17:11] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:18:24] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 11:18:26] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:18:40] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 11:18:40] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:18:48] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:19:02] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:20:21] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 11:20:22] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:20:31] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:23:21] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 11:23:21] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:29:30] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 11:29:32] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:29:35] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:30:33] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 11:30:34] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:30:36] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 11:30:37] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:31:30] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 11:31:30] FILE INFO video_file {"name":"Clodes.jpg","type":"image/jpeg","tmp_name":"/tmp/phpRMmw3R","error":0,"size":187829}
+[2026-01-07 11:31:30] File Check
+[2026-01-07 11:31:31] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:32:01] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:32:10] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 11:32:11] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:32:19] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:32:25] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 11:32:25] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:32:27] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:32:41] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 11:32:42] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:32:46] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:32:56] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 11:32:57] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:33:07] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 11:33:07] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:33:09] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 11:33:09] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:34:25] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 11:34:25] FILE INFO video_file {"name":"","type":"","tmp_name":"","error":4,"size":0}
+[2026-01-07 11:34:25] File Check
+[2026-01-07 11:34:32] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 11:34:32] FILE INFO video_file {"name":"Open.jpg","type":"image/jpeg","tmp_name":"/tmp/phptQD8XN","error":0,"size":156216}
+[2026-01-07 11:34:32] File Check
+[2026-01-07 11:34:33] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:35:26] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:42:15] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 11:42:17] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:42:20] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 11:42:20] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:43:00] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 11:43:00] FILE INFO video_file {"name":"Closed.jpg","type":"image/jpeg","tmp_name":"/tmp/phpB7TmLi","error":0,"size":156386}
+[2026-01-07 11:43:00] File Check
+[2026-01-07 11:43:02] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:43:05] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 11:43:05] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:43:15] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:43:19] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:43:30] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 11:43:32] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:43:34] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:43:41] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:43:54] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 11:43:55] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:43:57] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:44:08] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 11:44:08] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:44:34] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 11:44:45] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 11:44:48] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:45:08] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 11:45:08] FILE INFO video_file {"name":"Clodes.jpg","type":"image/jpeg","tmp_name":"/tmp/phpSXPBsW","error":0,"size":187829}
+[2026-01-07 11:45:08] File Check
+[2026-01-07 11:45:09] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:45:12] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 11:45:12] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:45:17] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:48:39] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 11:48:40] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:49:44] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 11:49:44] FILE INFO video_file {"name":"finish.png","type":"image/png","tmp_name":"/tmp/php0kSNop","error":0,"size":7560}
+[2026-01-07 11:49:44] File Check
+[2026-01-07 11:49:45] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:49:48] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 11:49:48] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:50:56] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 11:50:56] FILE INFO video_file {"name":"","type":"","tmp_name":"","error":4,"size":0}
+[2026-01-07 11:50:56] File Check
+[2026-01-07 11:51:19] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 11:51:19] FILE INFO video_file {"name":"stream.mp4","type":"video/mp4","tmp_name":"/tmp/phpQQmNDk","error":0,"size":90214326}
+[2026-01-07 11:51:19] File Check
+[2026-01-07 11:51:21] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:52:07] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 11:52:07] FILE INFO video_file {"name":"stream.mp4","type":"video/mp4","tmp_name":"/tmp/phpBaNtWb","error":0,"size":90214326}
+[2026-01-07 11:52:07] File Check
+[2026-01-07 11:52:10] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:52:17] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 11:52:44] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:00:56] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:00:57] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:01:03] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:01:12] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 12:01:12] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:01:13] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 12:01:13] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:01:15] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 12:01:15] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:01:16] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 12:01:16] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:01:49] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 12:01:49] FILE INFO video_file {"name":"Open.jpg","type":"image/jpeg","tmp_name":"/tmp/phpYrXxm1","error":0,"size":156216}
+[2026-01-07 12:01:49] File Check
+[2026-01-07 12:01:54] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:03:40] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:03:55] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 12:03:56] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:03:59] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:09:52] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:09:54] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:09:59] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:13:06] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 12:13:06] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:20:41] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:20:48] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:20:50] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:22:10] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:22:12] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:22:14] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:22:17] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:22:41] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:22:42] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:23:24] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 12:23:24] FILE INFO video_file {"name":"stream.mp4","type":"video/mp4","tmp_name":"/tmp/php9sRWsO","error":0,"size":90214326}
+[2026-01-07 12:23:24] File Check
+[2026-01-07 12:23:25] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:23:27] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:25:19] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:29:35] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:29:35] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:29:37] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:29:39] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:30:51] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:30:53] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:30:54] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:37:41] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:37:42] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:38:13] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 12:38:14] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:38:26] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 12:38:28] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:44:34] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:44:35] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:44:37] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:48:14] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:48:15] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:48:18] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:48:53] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 12:48:54] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:48:56] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:49:06] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:49:19] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 12:49:20] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:49:28] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:49:33] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:49:47] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:50:11] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 12:50:13] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:50:22] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:50:38] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:50:48] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 12:50:49] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:51:16] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:51:25] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 12:51:26] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:51:41] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 12:51:41] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:52:12] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 12:52:12] FILE INFO video_file {"name":"рибус 5.jpg","type":"image/jpeg","tmp_name":"/tmp/phpR0v20o","error":0,"size":4388}
+[2026-01-07 12:52:12] File Check
+[2026-01-07 12:52:13] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:54:34] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-07 12:54:34] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:56:25] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 12:56:27] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:56:31] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:56:49] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 12:56:50] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:56:58] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:57:15] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 12:57:17] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:57:47] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 12:57:47] FILE INFO video_file {"name":"Screenshot 2025-12-18 211954.png","type":"image/png","tmp_name":"/tmp/phpFuqwwv","error":0,"size":198206}
+[2026-01-07 12:57:47] File Check
+[2026-01-07 12:57:48] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:57:52] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 12:57:52] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:57:59] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:58:10] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 12:58:11] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 12:58:56] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 13:00:06] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 13:00:29] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 13:00:32] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 13:02:26] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 13:02:28] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 13:02:29] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 13:02:40] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 13:02:41] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 13:02:53] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 13:02:53] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 13:02:57] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 13:02:57] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 13:02:59] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 13:02:59] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 13:03:01] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 13:03:01] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 13:03:07] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:01:30] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 16:01:32] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:01:53] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:01:56] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:01:57] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:04:22] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 16:04:26] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:05:22] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-07 16:05:22] FILE INFO video_file {"name":"stream.mp4","type":"video/mp4","tmp_name":"/tmp/phpKmyrHT","error":0,"size":90214326}
+[2026-01-07 16:05:22] File Check
+[2026-01-07 16:05:23] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:12:30] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:12:35] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:12:36] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:17:58] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:18:08] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:18:09] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:24:22] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:24:51] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:24:52] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:25:02] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:25:28] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:25:29] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:27:05] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:27:49] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:27:52] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:27:59] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:28:23] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 16:28:24] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:28:27] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-07 16:28:27] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:28:28] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:28:44] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:29:02] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:29:03] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:35:16] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:35:26] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:35:27] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:38:07] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:38:19] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:38:20] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:38:22] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:38:33] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:38:34] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:39:03] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:39:08] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:39:09] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:39:33] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:41:38] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:41:39] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:46:20] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:46:38] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:46:39] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:47:41] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:47:47] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:47:48] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:48:26] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:48:32] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:48:33] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:48:38] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:48:56] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:48:57] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:49:17] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:49:22] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:49:23] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:49:30] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:49:35] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:49:36] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:53:08] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:54:04] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:54:22] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:54:23] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:54:27] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:54:43] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:54:45] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:55:10] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:55:18] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:55:19] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:58:02] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 16:58:32] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 16:58:33] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:01:26] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:01:35] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:01:36] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:03:33] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:04:36] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:04:37] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:15:59] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:16:14] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:16:15] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:17:25] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:17:30] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:17:31] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:18:06] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:18:18] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:18:19] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:18:55] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:19:01] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:19:02] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:19:14] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:19:40] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:19:41] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:30:50] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:31:10] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:31:11] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:31:30] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:31:41] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:31:42] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:33:55] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:34:29] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:34:31] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:34:37] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:34:41] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:35:07] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:35:08] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:35:38] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 17:35:39] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:35:46] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:36:32] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 17:36:33] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 17:36:52] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:36:54] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:37:09] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:37:11] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:39:13] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:39:22] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:39:24] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:44:32] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:44:57] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:44:58] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:46:52] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:47:29] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:47:30] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:50:29] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:51:00] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:51:01] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:54:26] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:54:37] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:54:38] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:56:25] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 17:56:57] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 17:56:58] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 18:01:25] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 18:01:59] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 18:02:00] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 18:02:11] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 18:02:29] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 18:02:31] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 18:03:02] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 18:03:09] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 18:03:10] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 18:03:18] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 18:03:51] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 18:03:52] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 18:05:13] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 18:05:45] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-07 18:05:46] api.php called {"action":"get_info","method":"GET"}
+[2026-01-07 18:13:06] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-07 18:13:07] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:06:55] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-08 13:06:57] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:07:04] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:07:08] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:08:15] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-08 13:08:18] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:08:21] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:08:29] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-08 13:08:31] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:12:54] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-08 13:12:55] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:13:46] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-08 13:13:47] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:44:13] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-08 13:44:14] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:45:49] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-08 13:45:50] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:46:48] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-08 13:46:50] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:48:15] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-08 13:48:15] FILE INFO video_file {"name":"1_h264.mp4","type":"video/mp4","tmp_name":"/tmp/phphR4b0a","error":0,"size":1046987}
+[2026-01-08 13:48:15] File Check
+[2026-01-08 13:48:18] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:49:14] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 13:50:04] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-08 13:50:06] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 17:27:19] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-08 17:27:22] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 17:28:23] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-08 17:28:23] FILE INFO video_file {"name":"Цомін рах 12.25_page-0001.jpg","type":"image/jpeg","tmp_name":"/tmp/phpmDAcnD","error":0,"size":226793}
+[2026-01-08 17:28:23] File Check
+[2026-01-08 17:28:24] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 17:28:28] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 17:28:33] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-08 17:28:34] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 17:29:49] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-08 17:29:49] FILE INFO video_file {"name":"Цомін рах 12.25_page-0001.jpg","type":"image/jpeg","tmp_name":"/tmp/phpRAbxrO","error":0,"size":226793}
+[2026-01-08 17:29:49] File Check
+[2026-01-08 17:29:51] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 17:30:15] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-08 17:30:16] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 17:33:17] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-08 17:33:19] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 17:33:28] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-08 17:33:28] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 17:33:30] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-08 17:33:30] api.php called {"action":"get_info","method":"GET"}
+[2026-01-08 17:33:42] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 12:16:37] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-09 12:16:40] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 12:30:50] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-09 12:30:50] FILE INFO video_file {"name":"1_h264.mp4","type":"video/mp4","tmp_name":"/tmp/php9uzfks","error":0,"size":1046987}
+[2026-01-09 12:30:50] File Check
+[2026-01-09 12:30:52] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 12:46:56] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 12:47:10] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 12:47:12] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:18:32] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-09 13:18:33] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:19:43] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:20:17] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:20:18] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:20:35] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:20:42] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:20:43] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:20:47] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:20:53] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:20:54] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:21:12] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:21:20] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:21:21] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:21:26] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:21:31] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:21:32] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:21:43] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-09 13:21:45] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:21:54] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:22:17] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:22:18] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:22:27] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:22:34] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:22:35] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:22:41] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:22:49] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:22:50] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:23:02] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:23:07] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:23:08] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:23:09] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:23:28] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:23:35] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:23:35] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:24:08] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:24:18] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:24:19] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:24:24] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:24:37] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:24:38] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:25:12] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:25:23] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:25:24] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:43:54] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:44:03] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:44:05] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:54:45] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:55:18] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:55:19] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:57:14] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 13:57:32] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 13:57:33] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 15:37:48] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-09 15:37:49] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 15:38:04] api.php called {"action":"get_info","method":"GET"}
+[2026-01-09 15:38:28] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-09 15:38:29] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 16:15:13] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-12 16:35:59] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-12 16:36:02] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 16:36:05] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 16:36:31] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-12 16:36:33] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 16:39:13] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 16:39:42] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-12 16:41:50] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 17:06:27] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 17:06:45] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-12 17:06:47] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 18:50:26] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-12 18:50:29] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 18:51:31] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-12 18:51:31] FILE INFO video_file {"name":"Big_Buck_Bunny_1080_10s_30MB-2.mp4","type":"video/mp4","tmp_name":"/tmp/phpda7lyP","error":0,"size":30704510}
+[2026-01-12 18:51:31] File Check
+[2026-01-12 18:51:33] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 18:52:20] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 18:52:27] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-12 18:52:30] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 18:57:32] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-12 18:57:32] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 18:57:36] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-12 18:57:36] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 18:57:38] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-12 18:57:38] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 18:58:32] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-12 18:58:32] FILE INFO video_file {"name":"Big_Buck_Bunny_1080_10s_30MB-3.mp4","type":"video/mp4","tmp_name":"/tmp/phplicqS4","error":0,"size":31462182}
+[2026-01-12 18:58:32] File Check
+[2026-01-12 18:58:40] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 18:59:46] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 19:00:04] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-12 19:00:06] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 19:03:40] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 19:03:50] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-12 19:03:52] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 19:04:16] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 19:04:38] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-12 19:04:40] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 19:04:51] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-12 19:04:51] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 19:05:14] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-12 19:05:14] FILE INFO video_file {"name":"Big_Buck_Bunny_1080_10s_1MB.mp4","type":"video/mp4","tmp_name":"/tmp/phpJA2PZd","error":0,"size":1049468}
+[2026-01-12 19:05:14] File Check
+[2026-01-12 19:05:18] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 19:05:28] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-12 19:05:28] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 19:05:52] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-12 19:05:52] FILE INFO video_file {"name":"Big_Buck_Bunny_1080_10s_30MB-2.mp4","type":"video/mp4","tmp_name":"/tmp/phpEJO5LM","error":0,"size":30704510}
+[2026-01-12 19:05:52] File Check
+[2026-01-12 19:05:53] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 19:08:34] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-12 19:08:34] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 19:13:44] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-12 19:13:44] FILE INFO video_file {"name":"Мой фильм.mp4","type":"video/mp4","tmp_name":"/tmp/php2zM0zN","error":0,"size":19297511}
+[2026-01-12 19:13:44] File Check
+[2026-01-12 19:13:45] api.php called {"action":"get_info","method":"GET"}
+[2026-01-12 19:16:23] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-12 19:16:23] api.php called {"action":"get_info","method":"GET"}
+[2026-01-13 10:18:44] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-13 10:18:46] api.php called {"action":"get_info","method":"GET"}
+[2026-01-13 10:19:07] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-13 10:19:07] api.php called {"action":"get_info","method":"GET"}
+[2026-01-13 10:19:46] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-13 10:19:46] FILE INFO video_file {"name":"Big_Buck_Bunny_1080_10s_1MB.mp4","type":"video/mp4","tmp_name":"/tmp/phprs7Akz","error":0,"size":1046987}
+[2026-01-13 10:19:46] File Check
+[2026-01-13 10:19:48] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:11:43] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:11:43] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:11:44] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:20:37] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:20:38] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:26:14] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:26:16] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:26:17] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:26:43] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:26:45] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:26:46] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:26:51] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:27:01] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:27:32] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:27:42] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:27:44] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:27:45] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:28:03] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:28:08] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:28:25] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:28:31] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:28:36] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:28:45] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:28:47] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:28:52] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:28:53] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:40:23] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-22 17:40:23] FILE INFO video_file {"name":"1448735-uhd_4096_2160_24fps.mp4","type":"video/mp4","tmp_name":"/tmp/phpSW3Bmd","error":0,"size":95290415}
+[2026-01-22 17:40:23] File Check
+[2026-01-22 17:40:23] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:42:09] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-22 17:42:09] FILE INFO video_file {"name":"11760785-uhd_2160_4096_30fps.mp4","type":"video/mp4","tmp_name":"/tmp/php3j2MNK","error":0,"size":21909387}
+[2026-01-22 17:42:09] File Check
+[2026-01-22 17:42:11] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:47:43] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-22 17:47:43] FILE INFO video_file {"name":"11760785-uhd_2160_4096_30fps.mp4","type":"video/mp4","tmp_name":"/tmp/phplAgp8j","error":0,"size":21909387}
+[2026-01-22 17:47:43] File Check
+[2026-01-22 17:47:46] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:54:02] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:54:03] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 17:54:05] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:54:24] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:54:57] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-22 17:54:58] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:55:03] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:55:21] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:56:01] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-22 17:56:02] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:58:50] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 17:59:26] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-22 17:59:27] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 18:47:32] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-22 18:47:37] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 18:48:15] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-22 18:48:15] FILE INFO video_file {"name":"11760785-uhd_2160_4096_30fps.mp4","type":"video/mp4","tmp_name":"/tmp/phptFqUuP","error":0,"size":21909387}
+[2026-01-22 18:48:15] File Check
+[2026-01-22 18:48:17] api.php called {"action":"get_info","method":"GET"}
+[2026-01-22 18:53:44] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-22 18:53:44] FILE INFO video_file {"name":"11760785-uhd_2160_4096_30fps.mp4","type":"video/mp4","tmp_name":"/tmp/phpO8bXSv","error":0,"size":21909387}
+[2026-01-22 18:53:44] File Check
+[2026-01-22 18:53:45] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 08:02:29] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-23 08:02:30] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 08:02:41] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 08:03:05] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-23 08:03:06] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 08:03:14] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-23 08:03:14] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 08:03:17] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-23 08:03:18] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 08:03:21] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-23 08:03:21] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 08:03:26] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 08:03:35] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 08:04:29] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-23 08:04:31] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 17:14:43] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-23 17:14:45] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-23 17:14:53] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 17:15:59] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 17:16:06] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 17:16:14] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-23 17:16:14] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 17:16:24] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-23 17:16:25] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-23 17:16:26] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 17:16:37] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-23 17:16:37] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-23 17:16:40] api.php called {"action":"get_info","method":"GET"}
+[2026-01-23 17:16:59] api.php called {"action":"reorder_ads","method":"POST"}
+[2026-01-23 17:16:59] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 13:53:20] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-24 13:53:40] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-24 13:53:43] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 13:55:55] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-24 13:55:55] FILE INFO video_file {"name":"11760785-uhd_2160_4096_30fps.mp4","type":"video/mp4","tmp_name":"/tmp/phpfwSXzA","error":0,"size":21909387}
+[2026-01-24 13:55:55] File Check
+[2026-01-24 13:55:58] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 13:58:31] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-24 13:58:31] FILE INFO video_file {"name":"1448735-uhd_4096_2160_24fps.mp4","type":"video/mp4","tmp_name":"/tmp/phptDw9tX","error":0,"size":95290415}
+[2026-01-24 13:58:31] File Check
+[2026-01-24 13:58:33] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 13:59:36] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-24 13:59:36] FILE INFO video_file {"name":"nature-voda-palmi-derevya-plyazh-nebo-otdikh-153054.jpeg","type":"image/jpeg","tmp_name":"/tmp/phpraVeEN","error":0,"size":347029}
+[2026-01-24 13:59:36] File Check
+[2026-01-24 13:59:38] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 15:43:57] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-24 15:43:59] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-24 15:44:01] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-24 15:44:06] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 15:44:16] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 15:45:55] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-24 15:45:56] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 15:46:08] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 15:47:25] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-24 15:47:27] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 15:48:32] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-24 15:48:32] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 15:48:34] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-24 15:48:34] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 15:48:36] api.php called {"action":"delete_ad","method":"POST"}
+[2026-01-24 15:48:36] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 15:49:30] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-24 15:49:30] FILE INFO video_file {"name":"1448735-uhd_4096_2160_24fps.mp4","type":"video/mp4","tmp_name":"/tmp/phpljMcfC","error":0,"size":95290415}
+[2026-01-24 15:49:30] File Check
+[2026-01-24 15:49:32] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 15:51:51] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-24 15:51:51] FILE INFO video_file {"name":"11760785-uhd_2160_4096_30fps.mp4","type":"video/mp4","tmp_name":"/tmp/phpPpXB3L","error":0,"size":21909387}
+[2026-01-24 15:51:51] File Check
+[2026-01-24 15:51:55] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 20:44:34] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-24 20:44:36] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 20:44:39] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 20:44:46] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-24 20:44:51] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-24 20:44:54] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 20:45:13] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 20:45:46] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-24 20:45:47] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 20:46:01] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 20:46:30] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-24 20:46:31] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 20:47:59] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-24 20:47:59] FILE INFO video_file {"name":"4328789-uhd_3840_2160_25fps.mp4","type":"video/mp4","tmp_name":"/tmp/phpbFb7aa","error":0,"size":41171981}
+[2026-01-24 20:47:59] File Check
+[2026-01-24 20:48:03] api.php called {"action":"get_info","method":"GET"}
+[2026-01-24 20:55:06] api.php called {"action":"add_ad","method":"POST"}
+[2026-01-24 20:55:06] FILE INFO video_file {"name":"4231734-uhd_3840_2160_24fps.mp4","type":"video/mp4","tmp_name":"/tmp/php47K64c","error":0,"size":15868721}
+[2026-01-24 20:55:06] File Check
+[2026-01-24 20:55:07] api.php called {"action":"get_info","method":"GET"}
+[2026-01-29 22:10:06] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-29 22:10:07] api.php called {"action":"get_accounts","method":"GET"}
+[2026-01-29 22:10:10] api.php called {"action":"get_info","method":"GET"}
+[2026-01-29 22:10:41] api.php called {"action":"get_info","method":"GET"}
+[2026-01-29 22:11:31] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-29 22:11:33] api.php called {"action":"get_info","method":"GET"}
+[2026-01-29 22:15:37] api.php called {"action":"get_info","method":"GET"}
+[2026-01-29 22:17:00] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-29 22:17:02] api.php called {"action":"get_info","method":"GET"}
+[2026-01-29 22:17:10] api.php called {"action":"get_info","method":"GET"}
+[2026-01-29 22:18:06] api.php called {"action":"update_ad","method":"POST"}
+[2026-01-29 22:18:08] api.php called {"action":"get_info","method":"GET"}
+[2026-02-08 11:26:46] api.php called {"action":"get_accounts","method":"GET"}
+[2026-02-08 11:26:46] api.php called {"action":"get_accounts","method":"GET"}
+[2026-02-08 11:26:47] api.php called {"action":"get_info","method":"GET"}
+[2026-02-08 11:27:55] api.php called {"action":"get_info","method":"GET"}
+[2026-02-08 12:50:18] api.php called {"action":"get_accounts","method":"GET"}
+[2026-02-08 12:50:22] api.php called {"action":"get_info","method":"GET"}
+[2026-02-08 12:54:04] api.php called {"action":"get_accounts","method":"GET"}
+[2026-02-08 12:54:05] api.php called {"action":"get_info","method":"GET"}
+[2026-02-08 12:54:26] api.php called {"action":"get_accounts","method":"GET"}
+[2026-02-08 12:54:27] api.php called {"action":"get_info","method":"GET"}

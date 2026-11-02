@@ -1,0 +1,71 @@
+{
+  "total": 1769,
+  "matched": 1766,
+  "unmatched": 3,
+  "matched_via_old_name": 26,
+  "uid_base_total": 1606,
+  "uid_base_matched": 1603,
+  "uid_base_unmatched": 3,
+  "by_level": {
+    "oblast": {
+      "ok": 27,
+      "fail": 2
+    },
+    "raion": {
+      "ok": 121,
+      "fail": 1
+    },
+    "hromada": {
+      "ok": 1455,
+      "fail": 0
+    },
+    "city": {
+      "ok": 163,
+      "fail": 0
+    }
+  },
+  "unmatched_samples": [
+    {
+      "alert_uid": "1293",
+      "alert_level": "oblast",
+      "admin_level": 1,
+      "name_uk": "Харківська територіальна громада",
+      "oblast_name": null,
+      "raion_name": null,
+      "official_pcode": null,
+      "centroid_lat": null,
+      "centroid_lon": null,
+      "geom_wkt": null,
+      "match_method": "unmatched",
+      "match_notes": "no oblast for Харківська територіальна громада"
+    },
+    {
+      "alert_uid": "38",
+      "alert_level": "raion",
+      "admin_level": 2,
+      "name_uk": "Володимир-Волинська",
+      "oblast_name": "Волинська область",
+      "raion_name": "Володимир-Волинська",
+      "official_pcode": null,
+      "centroid_lat": null,
+      "centroid_lon": null,
+      "geom_wkt": null,
+      "match_method": "unmatched",
+      "match_notes": "no raion for Володимир-Волинська / Волинська область"
+    },
+    {
+      "alert_uid": "0",
+      "alert_level": "oblast",
+      "admin_level": 1,
+      "name_uk": "Тестовий регіон",
+      "oblast_name": null,
+      "raion_name": null,
+      "official_pcode": null,
+      "centroid_lat": null,
+      "centroid_lon": null,
+      "geom_wkt": null,
+      "match_method": "unmatched",
+      "match_notes": "no oblast for Тестовий регіон"
+    }
+  ]
+}

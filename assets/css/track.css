@@ -1,0 +1,671 @@
+/* ══════════════════════════════════════════════
+   Track page — верстка
+   ══════════════════════════════════════════════ */
+
+/* ── Головний контейнер: 3 рядки (header / map / player) ── */
+.track-container {
+   display: flex;
+   flex-direction: column;
+   height: calc(100vh - 60px);
+   overflow: hidden;
+}
+
+/* ══════════════════════════════════
+   TOP: IMEI + дата + інфо + стиль
+   ══════════════════════════════════ */
+.track-header {
+   display: flex;
+   align-items: center;
+   gap: 14px;
+   padding: 10px 20px;
+   background: var(--panel);
+   border-bottom: 1px solid var(--card-border);
+   flex-shrink: 0;
+}
+
+.track-header-group {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.track-header-spacer {
+   flex: 1;
+}
+
+.track-label {
+   font-size: 13px;
+   font-weight: 600;
+   color: var(--muted);
+   white-space: nowrap;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+}
+
+.track-input-imei {
+   width: 260px;
+   min-width: 180px;
+   height: 38px;
+   font-size: 14px;
+}
+
+.track-input-date {
+   width: 180px;
+   min-width: 150px;
+   height: 38px;
+   font-size: 14px;
+   color-scheme: dark;
+}
+
+.track-header .btn {
+   height: 38px;
+   min-height: 38px;
+   padding: 0 18px;
+   font-size: 14px;
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   white-space: nowrap;
+}
+
+/* ── Інфо-бар (час, швидкість, координати) ── */
+.track-info-bar {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
+.track-info-item {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   font-size: 12px;
+   color: var(--text-secondary);
+   white-space: nowrap;
+}
+
+.track-info-item svg {
+   color: var(--accent);
+   flex-shrink: 0;
+}
+
+/* ══════════════════════════════════
+   CENTER: карта + табло (inline)
+   ══════════════════════════════════ */
+.track-map-wrapper {
+   flex: 1;
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   overflow: hidden;
+   min-height: 0;
+}
+
+.track-map {
+   flex: 1;
+   min-height: 0;
+   min-width: 0;
+   background: #1a1f2e;
+   position: relative;
+   transition: flex 0.3s ease;
+}
+
+.track-map-placeholder {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   gap: 16px;
+   color: var(--muted);
+   font-size: 15px;
+}
+
+.track-map-placeholder p {
+   margin: 0;
+}
+
+/* ══════════════════════════════════
+   Табло — бічна панель (~40% карти)
+   ══════════════════════════════════ */
+.track-display-panel {
+   width: 40%;
+   min-width: 320px;
+   max-width: 520px;
+   background: var(--bg);
+   border-left: 1px solid var(--card-border);
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   flex-shrink: 0;
+   animation: trackPanelSlideIn 0.25s ease-out;
+}
+
+@keyframes trackPanelSlideIn {
+   from {
+      transform: translateX(100%);
+      opacity: 0;
+   }
+
+   to {
+      transform: translateX(0);
+      opacity: 1;
+   }
+}
+
+.track-display-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 16px;
+   background: var(--panel);
+   border-bottom: 1px solid var(--border);
+   flex-shrink: 0;
+}
+
+.track-display-title {
+   font-size: 14px;
+   font-weight: 600;
+   color: var(--accent);
+}
+
+.track-display-close {
+   width: 30px;
+   height: 30px;
+}
+
+.track-display-body {
+   flex: 1;
+   overflow: hidden;
+   display: flex;
+   min-height: 0;
+}
+
+/* ── Контент табло (як player.php) ── */
+.track-display-player-view {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   padding: 12px 14px;
+   overflow: hidden;
+   min-height: 0;
+}
+
+.display-additional-info {
+   flex-shrink: 0;
+   margin-bottom: 6px;
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
+.display-time {
+   font-size: 3.5vh;
+   font-family: fantasy;
+   color: #e6eef6;
+}
+
+.display-route-container {
+   flex: 1;
+   min-height: 0;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: 1fr;
+   gap: 16px;
+   width: 100%;
+   padding: 8px 10px;
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+   border: 1px solid #232b33;
+   border-radius: 8px;
+   box-sizing: border-box;
+   overflow: hidden;
+   align-content: stretch;
+}
+
+.display-empty-hint {
+   grid-column: 1 / -1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--muted);
+   font-size: 14px;
+}
+
+/* Рекламний контейнер у табло (замість маршруту) */
+.display-ad-container {
+   flex: 1;
+   min-height: 0;
+   position: relative;
+   background: #000;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+.display-ad-container #displayAdVideo,
+.display-ad-container #displayAdImage {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+/* Колонка зупинок (як у player.css) */
+.display-column {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   position: relative;
+   padding: 2px 2px;
+   height: 100%;
+}
+
+.display-column::before {
+   content: '';
+   position: absolute;
+   left: 15px;
+   top: 0;
+   bottom: 4px;
+   width: 2px;
+   background: repeating-linear-gradient(to bottom,
+         rgba(88, 166, 255, 0.2) 0px,
+         rgba(88, 166, 255, 0.2) 6px,
+         transparent 6px,
+         transparent 10px);
+   z-index: 1;
+   border-radius: 1px;
+}
+
+.display-stop {
+   position: relative;
+   padding-left: 36px;
+   font-size: 13px;
+   line-height: 1.4;
+   color: var(--muted);
+   overflow: hidden;
+   white-space: normal;
+   word-wrap: break-word;
+}
+
+.display-stop::before {
+   content: '';
+   position: absolute;
+   left: 4px;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid var(--accent);
+   background: var(--panel);
+   z-index: 2;
+   box-sizing: border-box;
+   transition: transform .22s ease, box-shadow .22s ease, background .22s ease;
+}
+
+/* Активна зупинка */
+.display-stop.active {
+   color: #ffffff;
+   font-weight: 700;
+}
+
+.display-stop.active::before {
+   background: var(--accent);
+   border-color: var(--accent);
+   transform: translateY(-50%) scale(1.25);
+   box-shadow: 0 0 12px rgba(88, 166, 255, 0.55), 0 0 4px rgba(88, 166, 255, 0.3);
+}
+
+/* Пройдена зупинка */
+.display-stop.past {
+   color: #6b8899;
+}
+
+.display-stop.past::before {
+   background: var(--accent-strong);
+   border-color: var(--accent-strong);
+   box-shadow: none;
+   transform: translateY(-50%) scale(0.9);
+}
+
+/* Лінія прогресу */
+.display-fill-line {
+   position: absolute;
+   left: 14px;
+   width: 4px;
+   top: 0;
+   height: 0;
+   background: linear-gradient(180deg, var(--accent-strong), var(--accent));
+   z-index: 2;
+   border-radius: 2px;
+   box-shadow: 0 0 6px rgba(88, 166, 255, 0.35);
+}
+
+/* Нижній лог */
+.display-log {
+   flex-shrink: 0;
+   margin-top: 6px;
+   width: 100%;
+   background: #0f1518;
+   border: 1px solid #20282f;
+   border-radius: 6px;
+   padding: 6px 10px;
+   color: var(--muted);
+   font-size: 12px;
+   box-sizing: border-box;
+   line-height: 1.3;
+   display: flex;
+   align-items: center;
+   overflow-x: auto;
+   overflow-y: hidden;
+   scroll-behavior: smooth;
+   scrollbar-width: none;
+}
+
+.display-log::-webkit-scrollbar {
+   display: none;
+}
+
+.display-log-title {
+   color: #9fb6ff;
+   font-weight: 600;
+   white-space: nowrap;
+}
+
+.display-log-list {
+   color: #a6b6c6;
+   margin: 0;
+   padding-left: 12px;
+   display: flex;
+   gap: 14px;
+}
+
+/* ══════════════════════════════════
+   BOTTOM: плеєр треку
+   ══════════════════════════════════ */
+.track-bottom {
+   flex-shrink: 0;
+   background: var(--panel);
+   border-top: 1px solid var(--card-border);
+}
+
+.track-player {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   padding: 10px 20px;
+}
+
+/* ── Кнопки керування ── */
+.track-player-controls {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   flex-shrink: 0;
+}
+
+.track-player-btn {
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid var(--border);
+   border-radius: 50%;
+   background: var(--input-bg);
+   color: var(--text);
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.track-player-btn:hover {
+   background: var(--hover-bg);
+   border-color: var(--accent);
+   color: var(--accent);
+}
+
+.track-player-btn:active {
+   transform: scale(0.95);
+}
+
+/* ── Час ── */
+.track-player-time {
+   font-size: 13px;
+   font-family: 'Courier New', Courier, monospace;
+   color: var(--text-secondary);
+   white-space: nowrap;
+   flex-shrink: 0;
+   min-width: 62px;
+   text-align: center;
+}
+
+/* ── Шкала прогресу ── */
+.track-player-progress-wrapper {
+   flex: 1;
+   position: relative;
+   height: 32px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   min-width: 0;
+}
+
+.track-player-progress-bg {
+   width: 100%;
+   height: 6px;
+   background: var(--border);
+   border-radius: 3px;
+   position: relative;
+   overflow: visible;
+}
+
+.track-player-progress-fill {
+   height: 100%;
+   width: 0%;
+   background: linear-gradient(90deg, var(--accent-strong), var(--accent));
+   border-radius: 3px;
+   transition: width 0.1s linear;
+   position: relative;
+}
+
+.track-player-progress-handle {
+   width: 14px;
+   height: 14px;
+   border-radius: 50%;
+   background: var(--accent);
+   border: 2px solid #fff;
+   position: absolute;
+   top: 50%;
+   left: 0%;
+   transform: translate(-50%, -50%);
+   cursor: grab;
+   transition: left 0.1s linear, box-shadow 0.2s;
+   box-shadow: 0 0 6px rgba(88, 166, 255, 0.4);
+   z-index: 3;
+}
+
+.track-player-progress-handle:hover {
+   box-shadow: 0 0 12px rgba(88, 166, 255, 0.7);
+   transform: translate(-50%, -50%) scale(1.2);
+}
+
+.track-player-progress-handle:active {
+   cursor: grabbing;
+}
+
+/* ── Мітки зупинок на шкалі ── */
+.track-player-stops {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   pointer-events: none;
+}
+
+.track-stop-mark {
+   position: absolute;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   width: 4px;
+   height: 14px;
+   border-radius: 2px;
+   background: rgba(88, 166, 255, 0.5);
+   pointer-events: all;
+   cursor: pointer;
+   transition: background 0.2s, height 0.2s;
+}
+
+.track-stop-mark:hover {
+   background: var(--accent);
+   height: 20px;
+}
+
+.track-stop-mark.active {
+   background: #4CAF50;
+   height: 18px;
+}
+
+.track-stop-mark.passed {
+   background: rgba(88, 166, 255, 0.3);
+}
+
+/* Tooltip зупинки */
+.track-stop-mark::after {
+   content: attr(data-name);
+   position: absolute;
+   bottom: calc(100% + 4px);
+   left: 50%;
+   transform: translateX(-50%);
+   background: rgba(15, 20, 25, 0.95);
+   color: var(--text);
+   padding: 4px 8px;
+   border-radius: 4px;
+   font-size: 11px;
+   white-space: nowrap;
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity 0.15s;
+   border: 1px solid var(--border);
+}
+
+.track-stop-mark:hover::after {
+   opacity: 1;
+}
+
+/* ── Швидкість ── */
+.track-player-speed {
+   flex-shrink: 0;
+}
+
+.track-speed-btn {
+   padding: 4px 10px;
+   border-radius: 6px;
+   border: 1px solid var(--border);
+   background: var(--input-bg);
+   color: var(--accent);
+   font-size: 13px;
+   font-weight: 700;
+   cursor: pointer;
+   transition: all 0.2s;
+   min-width: 38px;
+   text-align: center;
+}
+
+.track-speed-btn:hover {
+   background: var(--hover-bg);
+   border-color: var(--accent);
+}
+
+/* ── Кнопка табло ── */
+.track-player-display-toggle {
+   flex-shrink: 0;
+   margin-left: 4px;
+}
+
+.track-display-btn {
+   border-radius: 8px !important;
+   width: 42px;
+   height: 42px;
+}
+
+.track-display-btn.active {
+   background: var(--accent);
+   color: #fff;
+   border-color: var(--accent);
+}
+
+/* ══════════════════════════════════
+   Responsive
+   ══════════════════════════════════ */
+@media (max-width: 1100px) {
+   .track-info-bar {
+      display: none;
+   }
+}
+
+@media (max-width: 900px) {
+   .track-header {
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 14px;
+   }
+
+   .track-header-spacer {
+      display: none;
+   }
+
+   .track-input-imei {
+      width: 200px;
+   }
+
+   .track-player {
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 8px 14px;
+   }
+
+   .track-display-panel {
+      width: 45%;
+      min-width: 280px;
+   }
+}
+
+@media (max-width: 600px) {
+   .track-header {
+      flex-direction: column;
+      align-items: stretch;
+   }
+
+   .track-header-group {
+      width: 100%;
+   }
+
+   .track-input-imei,
+   .track-input-date {
+      width: 100%;
+      min-width: unset;
+   }
+
+   .track-header .btn {
+      width: 100%;
+      justify-content: center;
+   }
+
+   .track-player-time {
+      font-size: 11px;
+      min-width: 50px;
+   }
+
+   /* На мобільних табло під картою */
+   .track-map-wrapper {
+      flex-direction: column;
+   }
+
+   .track-display-panel {
+      width: 100%;
+      min-width: unset;
+      max-width: none;
+      height: 40%;
+      border-left: none;
+      border-top: 1px solid var(--card-border);
+   }
+}

@@ -1,0 +1,517 @@
+:root {
+   --bg: #0b1116;
+   --panel: #0f161b;
+   --muted: #9aa6b2;
+   --accent: #58a6ff;
+   --accent-strong: #1f6feb;
+   --line: #26323b;
+}
+
+/* ─── Глобальный layout: всё в 100vh ─── */
+html,
+body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   overflow: hidden;
+}
+
+body {
+   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+   background: var(--bg);
+   color: #e6eef6;
+   -webkit-font-smoothing: antialiased;
+   display: flex;
+   flex-direction: column;
+   padding: 10px 14px;
+   box-sizing: border-box;
+}
+
+/* ─── Верхняя панель (время + погода) ─── */
+#AdditionalInfo {
+   flex-shrink: 0;
+   margin-bottom: 6px;
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+
+#TimeNow {
+   font-size: 5.5vh;
+   font-family: fantasy;
+}
+
+#nextStop {
+   flex: 1;
+   font-size: 4.3vh;
+   color: #ffffff;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   min-width: 0;
+}
+
+#nextStop .nextStop-label {
+   color: #9aa6b2;
+   font-size: 0.85em;
+}
+
+#weather {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 4.3vh;
+   gap: 20px;
+   flex-shrink: 0;
+   margin-right: 25px;
+}
+
+.imagesAndText {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.imagesAndText img {
+   height: 50px;
+}
+
+/* ─── Маршрут (основная область — растягивается) ─── */
+#routeContainer {
+   flex: 1 1 0;
+   min-height: 0;
+   /* важно для flex-shrink */
+   display: grid;
+   /* grid-template-columns задається в JS (updateVisibleWindow) під число видимих колонок */
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: 1fr;
+   gap: 35px;
+   width: 100%;
+   padding: 10px 12px;
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+   border: 1px solid #232b33;
+   border-radius: 8px;
+   box-sizing: border-box;
+   overflow: hidden;
+   align-content: stretch;
+   align-items: stretch;
+}
+
+/* grid-template-columns динамічно задається в player.js — медіа-запити не потрібні */
+
+.column {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   position: relative;
+   padding: 2px 2px;
+   min-height: 0;
+   height: 100%;
+}
+
+/* ─── Остановка ─── */
+.stop {
+   position: relative;
+   padding-left: 36px;
+   font-size: 2.5vw;
+   line-height: 1.5;
+   color: var(--muted);
+   overflow: hidden;
+   white-space: normal;
+   word-break: break-all
+}
+
+/* ─── Кружок ─── */
+.stop::before {
+   content: '';
+   position: absolute;
+   left: 4px;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 18px;
+   height: 18px;
+   border-radius: 50%;
+   border: 2px solid var(--accent);
+   background: var(--panel);
+   z-index: 2;
+   box-sizing: border-box;
+   transition: transform .22s ease, box-shadow .22s ease, background .22s ease;
+}
+
+/* ─── Пунктирная линия ─── */
+.column::before {
+   content: '';
+   position: absolute;
+   left: 15px;
+   top: 0;
+   bottom: 4px;
+   width: 2px;
+   background: repeating-linear-gradient(to bottom,
+         rgba(88, 166, 255, 0.2) 0px,
+         rgba(88, 166, 255, 0.2) 6px,
+         transparent 6px,
+         transparent 10px);
+   z-index: 1;
+   border-radius: 1px;
+}
+
+/* ─── Активная остановка (машина ЗДЕСЬ) ─── */
+.stop.active {
+   color: #ffffff;
+   font-weight: 700;
+}
+
+.stop.active::before {
+   background: var(--accent);
+   border-color: var(--accent);
+   transform: translateY(-50%) scale(1.25);
+   box-shadow: 0 0 12px rgba(88, 166, 255, 0.55), 0 0 4px rgba(88, 166, 255, 0.3);
+   animation: activePulse 2s ease-in-out infinite;
+}
+
+@keyframes activePulse {
+
+   0%,
+   100% {
+      box-shadow: 0 0 4px rgba(88, 166, 255, 0.55), 0 0 4px rgba(88, 166, 255, 0.3);
+   }
+
+   50% {
+      box-shadow: 0 0 6px rgba(88, 166, 255, 0.8), 0 0 8px rgba(88, 166, 255, 0.5);
+   }
+}
+
+/* ─── Пройденная остановка ─── */
+.stop.past {
+   color: #6b8899;
+}
+
+.stop.past::before {
+   background: var(--accent-strong);
+   border-color: var(--accent-strong);
+   box-shadow: none;
+   transform: translateY(-50%) scale(0.9);
+}
+
+/* ─── Линия прогресса ─── */
+.fillLine {
+   position: absolute;
+   left: 14px;
+   width: 4px;
+   top: 0;
+   height: 0;
+   background: linear-gradient(180deg, var(--accent-strong), var(--accent));
+   z-index: 2;
+   border-radius: 2px;
+   transition: height 0.5s ease;
+   box-shadow: 0 0 6px rgba(88, 166, 255, 0.35);
+}
+
+/* ─── Лог (нижняя полоса) ─── */
+#log_container {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   width: 100%;
+   min-width: 0;
+   flex-shrink: 0;
+   margin-top: 8px;
+   box-sizing: border-box;
+   background: #0f1518;
+   border: 1px solid #20282f;
+   border-radius: 6px;
+   padding: 8px 10px;
+}
+
+#log {
+   flex: 1 1 0;
+   min-width: 0;
+   color: var(--muted);
+   font-size: clamp(10px, 1vw, 15px);
+   box-sizing: border-box;
+   line-height: 1.3;
+   display: flex;
+   align-items: center;
+   overflow-x: auto;
+   overflow-y: hidden;
+   scroll-behavior: smooth;
+   scrollbar-width: none;
+   position: relative;
+}
+
+#log::-webkit-scrollbar {
+   display: none;
+}
+
+.log-section-title {
+   flex-shrink: 0;
+   color: #9fb6ff;
+   font-weight: 600;
+   font-size: 4vh;
+   margin: 0;
+   white-space: nowrap;
+}
+
+.log-list {
+   color: #a6b6c6;
+   font-size: 4vh;
+   margin: 0;
+   padding-left: 16px;
+   display: flex;
+   gap: 20px;
+}
+
+.log-item {
+   margin: 0;
+   white-space: nowrap;
+   background-color: #1f272f;
+   border: 1px solid #303030;
+   padding: 3px;
+}
+
+/* ─── Рекламный контейнер ─── */
+#adContainer {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #000;
+   z-index: 100;
+}
+
+#adLoadingIndicator {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   z-index: 101;
+}
+
+.loading-spinner {
+   width: 50px;
+   height: 50px;
+   border: 4px solid rgba(255, 255, 255, 0.2);
+   border-top-color: #58a6ff;
+   border-radius: 50%;
+   animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.loading-text {
+   color: #e6eef6;
+   font-size: 1.5vw;
+   font-weight: 500;
+}
+
+#adVideo {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+#adImage {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+/* ─── No Signal ─── */
+#noSignalOverlay {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 10000;
+}
+
+#noSignalOverlay.show {
+   display: block;
+}
+
+#noSignalText {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   font-size: 2.5vw;
+   font-weight: bold;
+   color: #fff;
+   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* ─── Сповіщення про тривогу ─── */
+#alertCorner {
+   display: none;
+   position: fixed;
+   top: 12px;
+   left: 14px;
+   z-index: 200;
+   pointer-events: none;
+}
+
+#alertCorner.show {
+   display: block;
+   animation: alertCornerPulse 1.2s ease-in-out infinite;
+}
+
+#alertCorner img {
+   height: 10vh;
+   width: auto;
+   display: block;
+   filter: drop-shadow(0 0 10px rgba(229, 52, 43, 0.7));
+}
+
+#alertBanner {
+   display: none;
+   position: fixed;
+   bottom: 0;
+   z-index: 200;
+   align-items: center;
+   justify-content: center;
+   gap: 22px;
+   width: 100vw;
+   padding: 16px 34px;
+   background: linear-gradient(180deg, #e5342b, #b7160f);
+   color: #fff;
+   border: 2px solid #ff6a5f;
+   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55), 0 0 18px rgba(229, 52, 43, 0.65);
+   font-size: 4.2vh;
+   font-weight: 700;
+   text-align: center;
+   line-height: 1.25;
+   left: 0;
+}
+
+#alertBanner.show {
+   display: flex;
+   animation: alertBannerPulse 1.4s ease-in-out infinite;
+}
+
+#alertBanner .alertBanner-icon {
+   height: 6vh;
+   width: auto;
+   flex-shrink: 0;
+   filter: brightness(0) invert(1);
+   /* чорна ракета → біла на червоному фоні */
+}
+
+@keyframes alertCornerPulse {
+
+   0%,
+   100% {
+      transform: scale(1);
+      opacity: 1;
+   }
+
+   50% {
+      transform: scale(1.08);
+      opacity: 0.85;
+   }
+}
+
+@keyframes alertBannerPulse {
+
+   0%,
+   100% {
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55), 0 0 12px rgba(229, 52, 43, 0.5);
+   }
+
+   50% {
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55), 0 0 28px rgba(229, 52, 43, 0.95);
+   }
+}
+
+/* ─── Адаптив для маленьких экранов ─── */
+@media (max-height: 700px) {
+   body {
+      padding: 6px 10px;
+   }
+
+   #AdditionalInfo {
+      margin-bottom: 4px;
+      gap: 16px;
+   }
+
+   .imagesAndText img {
+      height: 36px;
+   }
+
+   #routeContainer {
+      gap: 8px;
+      padding: 6px 8px;
+   }
+
+   .stop {
+      padding-left: 28px;
+   }
+
+   .stop::before {
+      width: 14px;
+      height: 14px;
+   }
+
+   .column::before {
+      left: 13px;
+   }
+
+   .fillLine {
+      left: 12px;
+   }
+
+   #log_container {
+      margin-top: 4px;
+      padding: 5px 8px;
+   }
+}
+
+@media (max-width: 1200px) {
+   .stop::before {
+      width: 14px;
+      height: 14px;
+      left: 6px;
+   }
+
+   .column::before {
+      left: 14px;
+   }
+
+   .fillLine {
+      left: 14px;
+   }
+
+   .stop {
+      padding-left: 30px;
+   }
+}
+
+@media (max-width: 1200px) {
+   .stop {
+      font-size: 3vw;
+   }
+}
+
+
+@media (max-width: 950px) {
+   .stop {
+      font-size: 3.5vw;
+   }
+}
+
+@media (max-width: 800px) {
+   .stop {
+      font-size: 4.3vw;
+   }
+}

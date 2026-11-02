@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Плеер IMEI
+        <?= htmlspecialchars($imei) ?>
+    </title>
+    <link rel="stylesheet" href="player.css">
+    <style>
+        html,
+        body {
+            cursor: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="AdditionalInfo">
+        <div id="TimeNow">--:--</div>
+        <div id="nextStop"></div>
+        <div id="weather"></div>
+    </div>
+
+    <div id="routeContainer" aria-hidden="false"></div>
+    <div id="log_container" aria-live="polite">
+        <div class="log-section-title">Майбутні зупинки: </div>
+        <div id="log">
+            <div id="log-future" class="log-list"></div>
+        </div>
+    </div>
+
+    <div id="adContainer">
+        <div id="adLoadingIndicator" style="display: none;">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Завантаження реклами...</div>
+        </div>
+        <video id="adVideo" playsinline webkit-playsinline muted preload="auto"></video>
+        <img id="adImage" style="display: none;" />
+    </div>
+
+    <div id="noSignalOverlay">
+        <div id="noSignalText">No Signal</div>
+    </div>
+
+    <div id="alertCorner" aria-hidden="true">
+        <img src="media/notification.png" alt="">
+    </div>
+
+    <div id="alertBanner" role="alert" aria-hidden="true">
+        <span id="alertBannerText"></span>
+        <img class="alertBanner-icon" src="media/rocket.png" alt="">
+    </div>
+
+    <!-- Аудіо тривоги: елементи в DOM + запуск через launch_player.bat з --autoplay-policy -->
+    <audio id="alertSoundNotify" src="media/notification_sound.mp3" preload="auto"></audio>
+    <audio id="alertSoundAlert" src="media/AirSafetyAlert.mp3" preload="auto"></audio>
+
+</body>
+<script>
+    // Get 'imei' parameter from URL
+    function getQueryParam(param) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(param) || '';
+    }
+
+    const imei = getQueryParam("imei");
+
+    if (!imei) {
+        // Show alert and possibly stop rendering the rest of the page
+        document.body.innerHTML = "<div style='margin:1em;font-size:1.5em;color:white;'>Укажіть imei в параметрі URL, наприклад: ?imei=354018114690435</div>";
+        // Alternatively, you can stop further js execution if needed:
+        throw new Error("IMEI parameter required");
+    }
+</script>
+<script src="player.js"></script>
+
+</html>

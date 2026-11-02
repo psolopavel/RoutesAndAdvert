@@ -1,0 +1,510 @@
+/* ─────────────────────────────────────
+   Тарифи маршрутів — макет та стилі
+   ───────────────────────────────────── */
+
+.tariffs-container {
+   display: flex;
+   height: calc(100vh - 60px);
+   overflow: hidden;
+}
+
+/* ---- Ліва половина (список + редактор) ---- */
+.tariffs-sidebar {
+   flex: 0 0 46%;
+   max-width: 640px;
+   min-width: 360px;
+   background: var(--panel);
+   border-right: 1px solid var(--border);
+   display: flex;
+   flex-direction: column;
+   overflow-x: hidden;
+   overflow-y: auto;
+   scrollbar-width: thin;
+   scrollbar-color: #353c5f var(--panel);
+}
+
+.tariffs-sidebar::-webkit-scrollbar {
+   width: 6px;
+   background: var(--panel);
+}
+
+.tariffs-sidebar::-webkit-scrollbar-thumb {
+   background: #384276;
+   border-radius: 4px;
+}
+
+#tariffsListMode,
+#tariffsEditMode {
+   flex-direction: column;
+   flex: 1;
+}
+
+#tariffsEditMode {
+   display: flex;
+}
+
+.tariffs-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+   padding: 16px;
+   border-bottom: 1px solid var(--border);
+   position: sticky;
+   top: 0;
+   background: var(--panel);
+   z-index: 5;
+}
+
+.tariffs-header h3 {
+   font-size: 16px;
+   color: var(--text);
+   flex: 1;
+}
+
+.tariffs-search {
+   padding: 12px 16px;
+   border-bottom: 1px solid var(--border);
+}
+
+/* ---- Список маршрутів ---- */
+.tariffs-routes-list {
+   padding: 8px;
+}
+
+.tariff-route-item {
+   padding: 10px 12px;
+   border: 1px solid var(--border);
+   border-radius: 8px;
+   margin-bottom: 8px;
+   cursor: pointer;
+   transition: background 0.15s, border-color 0.15s;
+   background: var(--input-bg);
+}
+
+.tariff-route-item:hover {
+   background: var(--hover-bg);
+   border-color: var(--muted);
+}
+
+.tariff-route-main {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 8px;
+   margin-bottom: 4px;
+}
+
+.tariff-route-name {
+   font-size: 14px;
+   font-weight: 600;
+   color: var(--text);
+}
+
+.tariff-route-sub {
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   font-size: 12px;
+   color: var(--muted);
+}
+
+.tariff-count.has {
+   color: var(--accent);
+}
+
+/* ---- Бейджі типу маршруту ---- */
+.kind-badge {
+   font-size: 11px;
+   font-weight: 600;
+   padding: 2px 8px;
+   border-radius: 10px;
+   white-space: nowrap;
+}
+
+.kind-badge.kind-city {
+   background: rgba(76, 175, 80, 0.18);
+   color: #81c784;
+}
+
+.kind-badge.kind-intercity {
+   background: rgba(255, 152, 0, 0.18);
+   color: #ffb74d;
+}
+
+.tariff-warn {
+   color: #ffb74d;
+   font-size: 13px;
+   cursor: help;
+}
+
+/* ---- Мета маршруту в режимі редагування ---- */
+.tariff-route-meta {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 10px 16px;
+   border-bottom: 1px solid var(--border);
+   font-size: 12px;
+   color: var(--muted);
+}
+
+.tariffs-edit-content {
+   padding: 12px 16px;
+   flex: 1;
+}
+
+/* ---- Список тарифів маршруту ---- */
+.tariff-list-section {
+   margin-bottom: 18px;
+}
+
+.tariff-list-section .section-title,
+.tariff-form-section .section-title {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.tariff-list-actions {
+   margin-left: auto;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 6px;
+   justify-content: flex-end;
+}
+
+.tariff-list-actions button {
+   font-size: 12px;
+}
+
+#uploadTariffBtn {
+   background-color: #e95964;
+}
+
+.tariff-header-icon {
+   display: block;
+   opacity: 0.85;
+}
+
+.tariffs-header .btn-icon:hover .tariff-header-icon {
+   opacity: 1;
+}
+
+.tariff-items-list {
+   margin-top: 8px;
+}
+
+.tariff-item {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   padding: 9px 12px;
+   border: 1px solid var(--border);
+   border-radius: 8px;
+   margin-bottom: 6px;
+   cursor: pointer;
+   background: var(--input-bg);
+   transition: background 0.15s;
+}
+
+.tariff-item:hover {
+   background: var(--hover-bg);
+}
+
+.tariff-item-name {
+   font-weight: 600;
+   color: var(--text);
+   font-size: 13px;
+   flex: 1;
+}
+
+.tariff-item-summary {
+   font-size: 12px;
+   color: var(--accent);
+}
+
+/* ---- Форма тарифу ---- */
+.tariff-form-section {
+   border-top: 1px solid var(--border);
+   padding-top: 14px;
+}
+
+.tariff-hint {
+   font-size: 11px;
+   color: var(--muted);
+   font-style: italic;
+   margin: 4px 0 10px;
+}
+
+.tariff-form-actions {
+   margin-top: 14px;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+/* ---- Індикатор автозбереження ---- */
+.autosave-status {
+   margin-left: auto;
+   font-size: 11px;
+   font-weight: 400;
+   color: var(--muted);
+   font-style: italic;
+   text-transform: none;
+   letter-spacing: 0;
+}
+
+/* ---- Міжмісто: прогрес заповнення ---- */
+.intercity-progress {
+   font-size: 12px;
+   font-weight: 600;
+   color: #81c784;
+   margin: 4px 0 8px;
+}
+
+.intercity-progress.incomplete {
+   color: #ffb74d;
+}
+
+.intercity-missing-list {
+   margin-top: 6px;
+   padding: 8px 10px;
+   background: rgba(255, 183, 77, 0.08);
+   border: 1px solid rgba(255, 183, 77, 0.2);
+   border-radius: 6px;
+   font-size: 11px;
+   font-weight: 400;
+   color: var(--text-secondary);
+   line-height: 1.5;
+   max-height: 140px;
+   overflow-y: auto;
+}
+
+/* ---- Міжмісто: список пар ---- */
+.intercity-pairs-list {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   margin-top: 6px;
+}
+
+.intercity-pair-row {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 6px 8px;
+   border: 1px solid var(--border);
+   border-radius: 6px;
+   background: var(--input-bg);
+   transition: border-color 0.15s, background 0.15s;
+}
+
+.intercity-pair-row.active {
+   border-color: #f39c12;
+   background: rgba(243, 156, 18, 0.08);
+}
+
+.intercity-pair-row .pair-label {
+   flex: 1;
+   font-size: 13px;
+   color: var(--text-secondary);
+}
+
+.intercity-pair-row .pair-input {
+   width: 90px;
+   flex: 0 0 90px;
+}
+
+.tariffs-empty,
+.tariffs-loading {
+   padding: 16px;
+   text-align: center;
+   color: var(--muted);
+   font-size: 13px;
+}
+
+/* ---- Права половина: карта ---- */
+.tariffs-map-container {
+   flex: 1;
+   position: relative;
+   overflow: hidden;
+}
+
+.tariffs-map {
+   width: 100%;
+   height: 100%;
+   background: #e5e3df;
+}
+
+.tariffs-map-legend {
+   position: absolute;
+   bottom: 16px;
+   left: 16px;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   padding: 6px 12px;
+   background: rgba(26, 31, 46, 0.9);
+   border: 1px solid var(--border);
+   border-radius: 8px;
+   color: var(--text);
+   font-size: 12px;
+   z-index: 3;
+}
+
+.legend-dot {
+   width: 14px;
+   height: 4px;
+   border-radius: 2px;
+   display: inline-block;
+}
+
+/* ---- Маркер зупинки ---- */
+.tariff-stop-marker {
+   width: 22px;
+   height: 22px;
+   border-radius: 50%;
+   background: #4CAF50;
+   color: #fff;
+   border: 2px solid #fff;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 11px;
+   font-weight: 700;
+   cursor: pointer;
+}
+
+.map-error {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   color: #b00;
+   font-size: 15px;
+   padding: 20px;
+   text-align: center;
+}
+
+/* ---- Адаптив ---- */
+/* ---- JSON модальне вікно ---- */
+.tariff-json-modal {
+   max-height: 85vh;
+   max-width: 74vw;
+}
+
+.tariff-json-modal-actions {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+
+/* ---- Перемикач формату JSON / TXT ---- */
+.tariff-format-toggle {
+   display: inline-flex;
+   border: 1px solid var(--border);
+   border-radius: 8px;
+   overflow: hidden;
+   margin-right: 6px;
+}
+
+.tariff-format-toggle .fmt-btn {
+   padding: 5px 12px;
+   font-size: 12px;
+   font-weight: 600;
+   background: var(--input-bg);
+   color: var(--muted);
+   border: none;
+   cursor: pointer;
+   transition: background 0.15s, color 0.15s;
+}
+
+.tariff-format-toggle .fmt-btn + .fmt-btn {
+   border-left: 1px solid var(--border);
+}
+
+.tariff-format-toggle .fmt-btn:hover {
+   color: var(--text);
+}
+
+.tariff-format-toggle .fmt-btn.active {
+   background: var(--accent);
+   color: #fff;
+}
+
+.tariff-json-hint {
+   font-size: 12px;
+   color: var(--muted);
+   margin: 0 0 12px;
+   line-height: 1.5;
+}
+
+.tariff-json-hint code {
+   color: var(--accent);
+   font-size: 11px;
+}
+
+.tariff-json-view {
+   margin: 0;
+   padding: 14px 16px;
+   background: #1e1e2e;
+   border: 1px solid var(--border);
+   border-radius: 8px;
+   font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+   font-size: 12px;
+   line-height: 1.55;
+   overflow-y: auto;
+   overflow-x: hidden;
+   max-height: 60vh;
+   white-space: pre;
+   color: var(--text);
+}
+
+.tariff-json-view .json-brace {
+   color: #569cd6;
+}
+
+.tariff-json-view .json-punct {
+   color: #d4d4d4;
+}
+
+.tariff-json-view .json-key {
+   color: #4ec9b0;
+}
+
+.tariff-json-view .json-value {
+   color: #ce9178;
+}
+
+.tariff-json-view .json-quote {
+   color: var(--text);
+}
+
+.tariff-json-view .json-number {
+   color: #b5cea8;
+}
+
+.tariff-json-view .json-zero {
+   color: #6a9955;
+   opacity: 0.75;
+}
+
+@media (max-width: 900px) {
+   .tariffs-container {
+      flex-direction: column;
+   }
+
+   .tariffs-sidebar {
+      flex: none;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      height: 55%;
+   }
+
+   .tariffs-map-container {
+      height: 45%;
+   }
+}

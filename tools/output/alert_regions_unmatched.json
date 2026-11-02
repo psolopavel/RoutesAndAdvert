@@ -1,0 +1,44 @@
+[
+  {
+    "alert_uid": "1293",
+    "alert_level": "oblast",
+    "admin_level": 1,
+    "name_uk": "Харківська територіальна громада",
+    "oblast_name": null,
+    "raion_name": null,
+    "official_pcode": null,
+    "centroid_lat": null,
+    "centroid_lon": null,
+    "geom_wkt": null,
+    "match_method": "unmatched",
+    "match_notes": "no oblast for Харківська територіальна громада"
+  },
+  {
+    "alert_uid": "38",
+    "alert_level": "raion",
+    "admin_level": 2,
+    "name_uk": "Володимир-Волинська",
+    "oblast_name": "Волинська область",
+    "raion_name": "Володимир-Волинська",
+    "official_pcode": null,
+    "centroid_lat": null,
+    "centroid_lon": null,
+    "geom_wkt": null,
+    "match_method": "unmatched",
+    "match_notes": "no raion for Володимир-Волинська / Волинська область"
+  },
+  {
+    "alert_uid": "0",
+    "alert_level": "oblast",
+    "admin_level": 1,
+    "name_uk": "Тестовий регіон",
+    "oblast_name": null,
+    "raion_name": null,
+    "official_pcode": null,
+    "centroid_lat": null,
+    "centroid_lon": null,
+    "geom_wkt": null,
+    "match_method": "unmatched",
+    "match_notes": "no oblast for Тестовий регіон"
+  }
+]

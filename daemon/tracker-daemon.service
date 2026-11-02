@@ -1,0 +1,24 @@
+[Unit]
+Description=Tracker Route Daemon — відстеження маршрутів транспорту
+After=network.target mysql.service mariadb.service
+Wants=mysql.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+
+WorkingDirectory=/var/www/RoutesAndAdvert/daemon
+ExecStart=/root/.pyenv/versions/3.12.6/bin/python /var/www/RoutesAndAdvert/daemon/tracker_daemon.py --config /etc/AdvertismentManager/daemon_config.ini
+
+Restart=always
+RestartSec=5
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=tracker-daemon
+
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
