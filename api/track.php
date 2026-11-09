@@ -11,21 +11,17 @@
  * виконується на клієнті (JavaScript), тому API просто віддає "сирі" дані.
  */
 
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: GET, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type');
 header('Content-Type: application/json; charset=utf-8');
-
-if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-   http_response_code(200);
-   exit();
-}
 
 ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 0);
 date_default_timezone_set('Europe/Kiev');
 
-require_once __DIR__ . "/../includes/connectDB.php";
+// Перевірка авторизації (також підключає БД); viewer — лише своя машина і її маршрути
+require_once __DIR__ . '/../includes/auth.php';
+$currentUser = authRequireApi(['admin', 'routes_track', 'viewer']);
+$isRestricted = authIsRestricted($currentUser);
+
 require_once __DIR__ . "/services/TrackerService.php";
 require_once __DIR__ . "/services/GeoUtils.php";
 
@@ -33,6 +29,11 @@ require_once __DIR__ . "/services/GeoUtils.php";
 // $db2 — RoutesAndAdvertisement (routes, stops)
 
 $action = $_GET['action'] ?? '';
+
+if (in_array($action, ['get_track', 'get_ads'], true)
+   && !authCanAccessImei($currentUser, trim($_GET['imei'] ?? ''))) {
+   authDenyApi('Немає доступу до цієї машини');
+}
 
 // ─────────────────────────────────────
 // get_track — GPS-трек за один день
@@ -128,9 +129,10 @@ if ($action === 'get_routes') {
    }
 
    // Завантажуємо маршрути
+   $routesWhere = $isRestricted ? " AND r.id IN (" . authSqlIntList(authUserRouteIds($currentUser)) . ")" : "";
    $sqlRoutes = "SELECT r.id, r.group_id, r.name, ST_AsText(r.geom) AS geom_wkt, r.length_m
                  FROM routes r
-                 WHERE r.active = 1
+                 WHERE r.active = 1{$routesWhere}
                  ORDER BY r.id";
 
    $resRoutes = $db2->query($sqlRoutes);

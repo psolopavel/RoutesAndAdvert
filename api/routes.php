@@ -9,10 +9,10 @@ ini_set('display_errors', 0);
 ini_set('display_startup_errors', 0);
 date_default_timezone_set('Europe/Kiev');
 
-// Перевірка авторизації (routes_track, admin; client — лише перегляд своїх маршрутів)
+// Перевірка авторизації (routes_track, admin; client і viewer — лише перегляд своїх маршрутів)
 require_once __DIR__ . '/../includes/auth.php';
-$currentUser = authRequireApi(['admin', 'routes_track', 'client']);
-$isClient = authIsClient($currentUser);
+$currentUser = authRequireApi(['admin', 'routes_track', 'client', 'viewer']);
+$isClient = authIsRestricted($currentUser);
 
 require_once __DIR__ . "/../includes/tariff_helpers.php";
 

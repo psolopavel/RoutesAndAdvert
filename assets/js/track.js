@@ -226,6 +226,17 @@ let vehicleZones = {};
       String(d.getDate()).padStart(2, '0');
 })();
 
+/** IMEI / дата з URL або з посилання платформи підрахунку (глядач: IMEI заблоковано). */
+const TRACK_PRESET = window.TRACK_PRESET || {};
+(function applyPreset() {
+   if (TRACK_PRESET.imei) els.imeiInput.value = TRACK_PRESET.imei;
+   if (TRACK_PRESET.date) els.dateInput.value = TRACK_PRESET.date;
+   if (TRACK_PRESET.imeiLocked) {
+      els.imeiInput.readOnly = true;
+      els.imeiInput.title = 'Перегляд лише цієї машини';
+   }
+})();
+
 
 // ═══════════════════════════════════════
 // MAPBOX
@@ -1474,12 +1485,21 @@ document.addEventListener('keydown', (e) => {
 // ═══════════════════════════════════════
 // INIT
 // ═══════════════════════════════════════
+/** Якщо IMEI задано заздалегідь — одразу завантажити трек, коли карта готова. */
+function autoLoadPreset() {
+   if (!TRACK_PRESET.imei || !map) return;
+   const run = () => els.loadBtn.click();
+   if (map.loaded()) run();
+   else map.once('load', run);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
    initMap();
    updateProgressBar(0);
 
    // Предзавантаження маршрутів
    loadRoutes();
+   autoLoadPreset();
 });
 
 // Fallback
@@ -1487,4 +1507,5 @@ if (document.readyState !== 'loading') {
    initMap();
    updateProgressBar(0);
    loadRoutes();
+   autoLoadPreset();
 }

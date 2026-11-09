@@ -7,6 +7,7 @@
  */
 
 require_once __DIR__ . '/connectDB.php';
+require_once __DIR__ . '/viewer_token.php';
 
 define('AUTH_SESSION_LIFETIME', 7 * 24 * 60 * 60);
 define('AUTH_COOKIE_NAME', 'ram_session');
@@ -29,13 +30,28 @@ function authCookieSecure()
 
 function authSetCookie($token, $expires)
 {
-   setcookie(AUTH_COOKIE_NAME, $token, [
-      'expires'  => $expires,
-      'path'     => '/',
-      'secure'   => authCookieSecure(),
-      'httponly' => true,
-      'samesite' => 'Lax',
-   ]);
+   if (headers_sent($file, $line)) {
+      logToFile('authSetCookie: headers already sent', ['file' => $file, 'line' => $line]);
+      return false;
+   }
+
+   if (PHP_VERSION_ID >= 70300) {
+      $ok = setcookie(AUTH_COOKIE_NAME, $token, [
+         'expires'  => $expires,
+         'path'     => '/',
+         'secure'   => authCookieSecure(),
+         'httponly' => true,
+         'samesite' => 'Lax',
+      ]);
+   } else {
+      // До PHP 7.3 масив опцій не підтримується; SameSite передаємо через path
+      $ok = setcookie(AUTH_COOKIE_NAME, $token, $expires, '/; samesite=Lax', '', authCookieSecure(), true);
+   }
+
+   if (!$ok) {
+      logToFile('authSetCookie: setcookie failed', ['php' => PHP_VERSION]);
+   }
+   return $ok;
 }
 
 function authTokenHash($token)
@@ -63,7 +79,7 @@ function authCurrentUser()
 
    $token = authCookieToken();
    $db2 = getDB('routes');
-   if ($token === null || !$db2) return null;
+   if ($token === null || !$db2) return $user = viewerCurrentUser();
 
    $hash = authTokenHash($token);
    $sql = "SELECT u.id, u.login, u.role, u.display_name,
@@ -73,7 +89,7 @@ function authCurrentUser()
            WHERE s.token_hash = '$hash' AND s.expires_at > NOW() AND u.active = 1
            LIMIT 1";
    $res = $db2->query($sql);
-   if (!$res || !($row = $res->fetch_assoc())) return null;
+   if (!$res || !($row = $res->fetch_assoc())) return $user = viewerCurrentUser();
    $res->free();
 
    if ((int)$row['idle_sec'] >= AUTH_TOUCH_INTERVAL) {
@@ -155,6 +171,7 @@ function authLogout()
       $db2->query("DELETE FROM user_sessions WHERE token_hash = '$hash'");
    }
    authSetCookie('', time() - 3600);
+   viewerClearCookie();
 }
 
 /**
@@ -220,12 +237,31 @@ function authIsClient(array $user)
    return $user['role'] === 'client';
 }
 
+/** Глядач за підписаним посиланням з платформи підрахунку (одна машина, лише перегляд). */
+function authIsViewer(array $user)
+{
+   return $user['role'] === 'viewer';
+}
+
+/** Бачить лише призначені маршрути / IMEI і нічого не змінює. */
+function authIsRestricted(array $user)
+{
+   return authIsClient($user) || authIsViewer($user);
+}
+
+function authRoleLabel($role)
+{
+   if ($role === 'viewer') return VIEWER_ROLE_LABEL;
+   return AUTH_ROLE_LABELS[$role] ?? $role;
+}
+
 /**
  * ID маршрутів, призначених користувачу.
  * @return int[]
  */
 function authUserRouteIds(array $user)
 {
+   if (authIsViewer($user)) return $user['route_ids'];
    static $cache = [];
    $uid = (int)$user['id'];
    if (isset($cache[$uid])) return $cache[$uid];
@@ -246,6 +282,7 @@ function authUserRouteIds(array $user)
  */
 function authUserImeis(array $user)
 {
+   if (authIsViewer($user)) return $user['imeis'];
    static $cache = [];
    $uid = (int)$user['id'];
    if (isset($cache[$uid])) return $cache[$uid];
@@ -260,16 +297,16 @@ function authUserImeis(array $user)
    return $imeis;
 }
 
-/** Чи має користувач доступ до маршруту (не-клієнти — до всіх). */
+/** Чи має користувач доступ до маршруту (без обмежень — до всіх). */
 function authCanAccessRoute(array $user, $routeId)
 {
-   return !authIsClient($user) || in_array((int)$routeId, authUserRouteIds($user), true);
+   return !authIsRestricted($user) || in_array((int)$routeId, authUserRouteIds($user), true);
 }
 
-/** Чи має користувач доступ до IMEI (не-клієнти — до всіх). */
+/** Чи має користувач доступ до IMEI (без обмежень — до всіх). */
 function authCanAccessImei(array $user, $imei)
 {
-   return !authIsClient($user) || in_array((string)$imei, authUserImeis($user), true);
+   return !authIsRestricted($user) || in_array((string)$imei, authUserImeis($user), true);
 }
 
 /** "1,2,3" для SQL IN (...); для порожнього списку — "0", щоб умова нічого не знаходила. */

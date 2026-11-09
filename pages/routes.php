@@ -9,8 +9,8 @@ if (file_exists($mapboxApiFile)) {
    $mapboxApiKey = $apiData['api_key'] ?? '';
 }
 
-// Клієнт лише переглядає призначені йому маршрути
-$routesReadonly = authIsClient($currentUser);
+// Клієнт і глядач лише переглядають призначені їм маршрути
+$routesReadonly = authIsRestricted($currentUser);
 
 // Отримуємо групи маршрутів з БД
 $routeGroups = [];

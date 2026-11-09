@@ -8,6 +8,13 @@ if (file_exists($mapboxApiFile)) {
    $apiData = json_decode(file_get_contents($mapboxApiFile), true);
    $mapboxApiKey = $apiData['api_key'] ?? '';
 }
+
+// Глядач бачить лише свою машину: IMEI підставлено і заблоковано
+$trackViewerImeis = authIsRestricted($currentUser) ? authUserImeis($currentUser) : [];
+$trackImeiLocked = authIsViewer($currentUser) && count($trackViewerImeis) === 1;
+$trackPresetImei = $trackImeiLocked ? $trackViewerImeis[0] : trim((string)($_GET['imei'] ?? ''));
+$trackPresetDate = (string)($_GET['date'] ?? '');
+if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $trackPresetDate)) $trackPresetDate = '';
 ?>
 
 <link rel="stylesheet" href="assets/css/track.css">
@@ -183,6 +190,11 @@ if (file_exists($mapboxApiFile)) {
 
    <script>
       window.MAPBOX_API_KEY = <?= json_encode($mapboxApiKey) ?>;
+      window.TRACK_PRESET = <?= json_encode([
+                              'imei' => $trackPresetImei,
+                              'date' => $trackPresetDate,
+                              'imeiLocked' => $trackImeiLocked,
+                           ], JSON_UNESCAPED_UNICODE | JSON_HEX_TAG) ?>;
    </script>
    <script src="assets/js/track.js"></script>
 <?php else: ?>

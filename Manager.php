@@ -23,6 +23,10 @@ switch ($accessLevel) {
     // Маршрути — лише перегляд призначених
     $availablePages = ['advertisement', 'advert_to_route', 'car_to_route', 'routes'];
     break;
+  case 'viewer':
+    // Посилання з платформи підрахунку: трек і маршрути однієї машини, лише перегляд
+    $availablePages = ['track', 'routes'];
+    break;
   case 'advertisement':
   default:
     $availablePages = ['advertisement', 'advert_to_route', 'car_to_route'];
@@ -113,7 +117,7 @@ $userLabel = $currentUser['display_name'] ?: $currentUser['login'];
         <?php endforeach; ?>
       </div>
       <div class="header-user">
-        <span class="header-user-name" title="<?= htmlspecialchars(AUTH_ROLE_LABELS[$accessLevel] ?? $accessLevel, ENT_QUOTES, 'UTF-8') ?>">
+        <span class="header-user-name" title="<?= htmlspecialchars(authRoleLabel($accessLevel), ENT_QUOTES, 'UTF-8') ?>">
           <?= htmlspecialchars($userLabel, ENT_QUOTES, 'UTF-8') ?>
         </span>
         <a href="auth/logout.php" class="nav-btn nav-btn-logout">Вихід</a>
