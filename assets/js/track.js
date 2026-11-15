@@ -218,22 +218,49 @@ let vehicleZones = {};
 // INIT
 // ═══════════════════════════════════════
 
-// Дата по замовчуванню: сьогодні
-(function setDefaultDate() {
+/** IMEI / дата з URL, cookie глядача або sessionStorage (після перемикання сторінок). */
+const TRACK_PRESET = window.TRACK_PRESET || {};
+const VIEWER_TRACK_CTX_KEY = 'ram_viewer_track_ctx';
+
+function readViewerTrackCtx() {
+   try {
+      const o = JSON.parse(sessionStorage.getItem(VIEWER_TRACK_CTX_KEY) || 'null');
+      if (o && o.imei && o.date) return o;
+   } catch (_) { /* ignore */ }
+   return null;
+}
+
+function writeViewerTrackCtx(imei, date) {
+   if (!TRACK_PRESET.imeiLocked || !imei || !date) return;
+   try {
+      sessionStorage.setItem(VIEWER_TRACK_CTX_KEY, JSON.stringify({ imei, date }));
+   } catch (_) { /* ignore */ }
+}
+
+function todayYmd() {
    const d = new Date();
-   els.dateInput.value = d.getFullYear() + '-' +
+   return d.getFullYear() + '-' +
       String(d.getMonth() + 1).padStart(2, '0') + '-' +
       String(d.getDate()).padStart(2, '0');
-})();
+}
 
-/** IMEI / дата з URL або з посилання платформи підрахунку (глядач: IMEI заблоковано). */
-const TRACK_PRESET = window.TRACK_PRESET || {};
-(function applyPreset() {
-   if (TRACK_PRESET.imei) els.imeiInput.value = TRACK_PRESET.imei;
-   if (TRACK_PRESET.date) els.dateInput.value = TRACK_PRESET.date;
+(function applyTrackPreset() {
+   let imei = (TRACK_PRESET.imei || '').trim();
+   let date = (TRACK_PRESET.date || '').trim();
+   const saved = readViewerTrackCtx();
+   if (TRACK_PRESET.imeiLocked && saved) {
+      if (!imei || saved.imei === imei) {
+         if (!date) date = saved.date;
+         if (!imei) imei = saved.imei;
+      }
+   }
+   if (!date) date = todayYmd();
+   if (imei) els.imeiInput.value = imei;
+   els.dateInput.value = date;
    if (TRACK_PRESET.imeiLocked) {
       els.imeiInput.readOnly = true;
       els.imeiInput.title = 'Перегляд лише цієї машини';
+      writeViewerTrackCtx(imei || els.imeiInput.value.trim(), date);
    }
 })();
 
@@ -1361,6 +1388,7 @@ els.loadBtn.addEventListener('click', async () => {
       // Завантажити трек
       const ok = await loadTrack(imei, date);
       if (!ok) return;
+      writeViewerTrackCtx(imei, date);
 
       // Завантажити рекламу та зони для цієї машини
       await loadAds(imei);
@@ -1487,7 +1515,9 @@ document.addEventListener('keydown', (e) => {
 // ═══════════════════════════════════════
 /** Якщо IMEI задано заздалегідь — одразу завантажити трек, коли карта готова. */
 function autoLoadPreset() {
-   if (!TRACK_PRESET.imei || !map) return;
+   const imei = (TRACK_PRESET.imei || els.imeiInput.value || '').trim();
+   const date = (els.dateInput.value || '').trim();
+   if (!imei || !date || !map) return;
    const run = () => els.loadBtn.click();
    if (map.loaded()) run();
    else map.once('load', run);

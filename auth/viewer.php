@@ -38,5 +38,6 @@ if ($user && in_array($user['role'], ['admin', 'routes_track'], true)) {
 if (authCookieToken() !== null) authLogout();
 
 viewerSetCookie($_GET['t'], $claims['exp']);
+if ($date !== '') viewerSetTrackDayCookie($date, $claims['exp']);
 header('Location: ' . $target);
 exit;

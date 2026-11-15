@@ -14,6 +14,8 @@
  */
 
 define('VIEWER_COOKIE_NAME', 'ram_viewer');
+/** Остання дата треку з посилання підрахунку (лише YYYY-MM-DD, не секрет). */
+define('VIEWER_DAY_COOKIE_NAME', 'ram_viewer_day');
 define('VIEWER_SECRET_FILE', '/etc/AdvertismentManager/viewer_secret.json');
 define('VIEWER_ROLE_LABEL', 'Перегляд маршрутів і треку');
 
@@ -89,6 +91,53 @@ function viewerSetCookie($token, $expires)
 function viewerClearCookie()
 {
    if (isset($_COOKIE[VIEWER_COOKIE_NAME])) viewerSetCookie('', time() - 3600);
+   viewerClearTrackDayCookie();
+}
+
+function viewerSetTrackDayCookie($date, $expires)
+{
+   if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', (string)$date)) return false;
+   if (headers_sent()) return false;
+   if (PHP_VERSION_ID >= 70300) {
+      return setcookie(VIEWER_DAY_COOKIE_NAME, $date, [
+         'expires'  => (int)$expires,
+         'path'     => '/',
+         'secure'   => authCookieSecure(),
+         'httponly' => false,
+         'samesite' => 'Lax',
+      ]);
+   }
+   return setcookie(VIEWER_DAY_COOKIE_NAME, $date, (int)$expires, '/; samesite=Lax', '', authCookieSecure(), false);
+}
+
+function viewerTrackDayFromCookie()
+{
+   $d = (string)($_COOKIE[VIEWER_DAY_COOKIE_NAME] ?? '');
+   return preg_match('/^\d{4}-\d{2}-\d{2}$/', $d) ? $d : '';
+}
+
+function viewerClearTrackDayCookie()
+{
+   if (!isset($_COOKIE[VIEWER_DAY_COOKIE_NAME])) return;
+   if (headers_sent()) return;
+   if (PHP_VERSION_ID >= 70300) {
+      setcookie(VIEWER_DAY_COOKIE_NAME, '', [
+         'expires'  => time() - 3600,
+         'path'     => '/',
+         'secure'   => authCookieSecure(),
+         'httponly' => false,
+         'samesite' => 'Lax',
+      ]);
+      return;
+   }
+   setcookie(VIEWER_DAY_COOKIE_NAME, '', time() - 3600, '/; samesite=Lax', '', authCookieSecure(), false);
+}
+
+/** Строк дії глядача з cookie токена (для синхронного TTL дати треку). */
+function viewerCookieExpires()
+{
+   $claims = viewerVerifyToken($_COOKIE[VIEWER_COOKIE_NAME] ?? '');
+   return $claims ? (int)$claims['exp'] : time() + 3600;
 }
 
 /** ID маршрутів, прив'язаних до IMEI у all_car_routes (як у платформі підрахунку). */

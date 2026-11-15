@@ -71,6 +71,19 @@ $navGroups = [
 ];
 
 $userLabel = $currentUser['display_name'] ?: $currentUser['login'];
+
+// Глядач з підрахунку: при перемиканні на «Трек» не губити IMEI і день з панелі.
+$viewerNavTrackQs = '';
+if ($accessLevel === 'viewer') {
+   $vim = authUserImeis($currentUser);
+   $vimei = (string)($vim[0] ?? '');
+   $vdate = trim((string)($_GET['date'] ?? ''));
+   if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $vdate)) $vdate = viewerTrackDayFromCookie();
+   if ($vimei !== '') {
+      $viewerNavTrackQs = '&imei=' . rawurlencode($vimei);
+      if ($vdate !== '') $viewerNavTrackQs .= '&date=' . rawurlencode($vdate);
+   }
+}
 ?>
 <!doctype html>
 <html lang="uk">
@@ -86,6 +99,13 @@ $userLabel = $currentUser['display_name'] ?: $currentUser['login'];
                             'login' => $currentUser['login'],
                             'role' => $currentUser['role'],
                           ], JSON_UNESCAPED_UNICODE | JSON_HEX_TAG) ?>;
+    window.RAM_VIEWER_TRACK_QS = <?= json_encode($viewerNavTrackQs, JSON_UNESCAPED_UNICODE) ?>;
+    function ramNavTo(sel) {
+      if (!sel || !sel.value) return;
+      var href = '?page=' + encodeURIComponent(sel.value);
+      if (sel.value === 'track' && window.RAM_VIEWER_TRACK_QS) href += window.RAM_VIEWER_TRACK_QS;
+      window.location.href = href;
+    }
   </script>
 </head>
 
@@ -103,7 +123,7 @@ $userLabel = $currentUser['display_name'] ?: $currentUser['login'];
           <select
             class="nav-select nav-group-<?= htmlspecialchars($groupKey, ENT_QUOTES, 'UTF-8') ?> <?= $groupHasCurrent ? 'active' : '' ?>"
             data-nav-group="<?= htmlspecialchars($groupKey, ENT_QUOTES, 'UTF-8') ?>"
-            onchange="if (this.value) window.location.href = '?page=' + this.value;">
+            onchange="ramNavTo(this)">
             <option value="" <?= $groupHasCurrent ? '' : 'selected' ?>>
               <?= htmlspecialchars($group['label'], ENT_QUOTES, 'UTF-8') ?>
             </option>

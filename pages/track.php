@@ -14,7 +14,12 @@ $trackViewerImeis = authIsRestricted($currentUser) ? authUserImeis($currentUser)
 $trackImeiLocked = authIsViewer($currentUser) && count($trackViewerImeis) === 1;
 $trackPresetImei = $trackImeiLocked ? $trackViewerImeis[0] : trim((string)($_GET['imei'] ?? ''));
 $trackPresetDate = (string)($_GET['date'] ?? '');
-if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $trackPresetDate)) $trackPresetDate = '';
+if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $trackPresetDate)) {
+   $trackPresetDate = $trackImeiLocked ? viewerTrackDayFromCookie() : '';
+}
+if ($trackImeiLocked && $trackPresetDate !== '') {
+   viewerSetTrackDayCookie($trackPresetDate, viewerCookieExpires());
+}
 ?>
 
 <link rel="stylesheet" href="assets/css/track.css">
