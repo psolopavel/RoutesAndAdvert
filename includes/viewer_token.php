@@ -162,6 +162,44 @@ function viewerRouteIdsForImei($imei)
 }
 
 /**
+ * Усі ID маршрутів, прив'язаних до IMEI: all_car_routes + routes_to_cars (як у плеєрі / треку).
+ *
+ * @return int[]
+ */
+function carRouteIdsForImei($imei)
+{
+   $ids = [];
+   foreach (viewerRouteIdsForImei($imei) as $rid) {
+      $ids[$rid] = true;
+   }
+
+   $db2 = getDB('routes');
+   if (!$db2) {
+      return array_keys($ids);
+   }
+
+   $imeiEsc = $db2->real_escape_string((string)$imei);
+   $sql = "SELECT first_route_id, second_route_id
+           FROM routes_to_cars
+           WHERE imei = '$imeiEsc'
+           ORDER BY id DESC
+           LIMIT 1";
+   if ($res = $db2->query($sql)) {
+      if ($row = $res->fetch_assoc()) {
+         foreach (['first_route_id', 'second_route_id'] as $col) {
+            $n = (int)($row[$col] ?? 0);
+            if ($n > 0) {
+               $ids[$n] = true;
+            }
+         }
+      }
+      $res->free();
+   }
+
+   return array_keys($ids);
+}
+
+/**
  * Глядач із cookie або null. Формат як у authCurrentUser() + imeis / route_ids.
  * @return array|null
  */

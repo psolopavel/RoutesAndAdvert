@@ -5,7 +5,7 @@
  * 
  * Ендпоінти:
  *   - get_track   — GPS-точки трекера за вказаний день
- *   - get_routes  — всі активні маршрути з зупинками та геометрією
+ *   - get_routes  — активні маршрути машини (imei) з зупинками та геометрією
  *
  * Вся логіка snap-to-line / визначення маршруту / статусів зупинок
  * виконується на клієнті (JavaScript), тому API просто віддає "сирі" дані.
@@ -30,7 +30,7 @@ require_once __DIR__ . "/services/GeoUtils.php";
 
 $action = $_GET['action'] ?? '';
 
-if (in_array($action, ['get_track', 'get_ads'], true)
+if (in_array($action, ['get_track', 'get_ads', 'get_routes'], true)
    && !authCanAccessImei($currentUser, trim($_GET['imei'] ?? ''))) {
    authDenyApi('Немає доступу до цієї машини');
 }
@@ -118,8 +118,8 @@ if ($action === 'get_track') {
 }
 
 // ─────────────────────────────────────
-// get_routes — всі активні маршрути з зупинками
-// Завантажується один раз при ініціалізації track.js
+// get_routes — маршрути, прив'язані до IMEI (all_car_routes + routes_to_cars)
+// Параметри: imei
 // ─────────────────────────────────────
 if ($action === 'get_routes') {
    if (!$db2) {
@@ -128,8 +128,32 @@ if ($action === 'get_routes') {
       exit;
    }
 
-   // Завантажуємо маршрути
-   $routesWhere = $isRestricted ? " AND r.id IN (" . authSqlIntList(authUserRouteIds($currentUser)) . ")" : "";
+   $imei = trim($_GET['imei'] ?? '');
+   if ($imei === '') {
+      http_response_code(400);
+      echo json_encode(['error' => 'imei is required']);
+      exit;
+   }
+
+   $carRouteIds = carRouteIdsForImei($imei);
+   if ($isRestricted) {
+      $allowed = array_flip(authUserRouteIds($currentUser));
+      $carRouteIds = array_values(array_filter(
+         $carRouteIds,
+         static fn($id) => isset($allowed[(int)$id])
+      ));
+   }
+
+   if (empty($carRouteIds)) {
+      echo json_encode([
+         'imei'   => $imei,
+         'routes' => [],
+         'count'  => 0,
+      ], JSON_UNESCAPED_UNICODE);
+      exit;
+   }
+
+   $routesWhere = " AND r.id IN (" . authSqlIntList($carRouteIds) . ")";
    $sqlRoutes = "SELECT r.id, r.group_id, r.name, ST_AsText(r.geom) AS geom_wkt, r.length_m
                  FROM routes r
                  WHERE r.active = 1{$routesWhere}
@@ -200,6 +224,7 @@ if ($action === 'get_routes') {
    }
 
    echo json_encode([
+      'imei'   => $imei,
       'routes' => $routes,
       'count'  => count($routes),
    ], JSON_UNESCAPED_UNICODE);

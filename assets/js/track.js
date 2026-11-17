@@ -2,7 +2,7 @@
  * Track page — відтворення треку + визначення маршруту + табло
  *
  * Архітектура:
- *   1. API: /api/track.php?action=get_routes  — всі маршрути (один раз)
+ *   1. API: /api/track.php?action=get_routes&imei=…  — маршрути, прив'язані до IMEI
  *   2. API: /api/track.php?action=get_track   — GPS-точки за день
  *   3. На клієнті: snap-to-line, визначення маршруту, статуси зупинок, табло
  *
@@ -183,7 +183,8 @@ let speedIdx = 0;
 let playTimer = null;
 
 // Дані
-let allRoutes = [];          // маршрути з API
+let allRoutes = [];          // маршрути з API (лише прив'язані до поточного IMEI)
+let routesImeiLoaded = null; // для якого IMEI завантажено allRoutes
 let trackPoints = [];        // GPS-точки за день
 let currentPointIdx = 0;     // поточний індекс в trackPoints
 
@@ -207,6 +208,8 @@ let routeTotalCount = 0;     // загальна кількість точок �
 // Mapbox
 let map = null;
 let trackMarker = null;
+let stopNamePopup = null;
+let stopHoverBound = false;
 let trackLine = null;
 
 // Реклама для поточного IMEI (type 1 — зони, type 2 — час)
@@ -284,6 +287,8 @@ function initMap() {
 
    // Вимикаємо навігацію клавіатурою на карті (стрілки використовуються для треку)
    map.keyboard.disable();
+
+   bindStopPointHover();
 
    // Зміна стилю карти
    els.mapStyleSelect.addEventListener('change', () => {
@@ -390,6 +395,35 @@ function drawTrackOnMap() {
    }
 }
 
+/** Назва зупинки при наведенні на точку на карті */
+function bindStopPointHover() {
+   if (!map || stopHoverBound) return;
+   stopHoverBound = true;
+
+   stopNamePopup = new mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false,
+      offset: 10,
+      className: 'track-stop-popup',
+   });
+
+   map.on('mouseenter', 'stop-points', (e) => {
+      if (!e.features?.length) return;
+      map.getCanvas().style.cursor = 'pointer';
+      const name = e.features[0].properties?.name;
+      if (!name) return;
+      stopNamePopup
+         .setLngLat(e.features[0].geometry.coordinates.slice())
+         .setText(name)
+         .addTo(map);
+   });
+
+   map.on('mouseleave', 'stop-points', () => {
+      map.getCanvas().style.cursor = '';
+      stopNamePopup.remove();
+   });
+}
+
 /** Плавно зсунути карту до поточної точки (без зміни zoom) */
 function panMapToCurrentPoint() {
    if (!map || trackPoints.length === 0) return;
@@ -432,17 +466,36 @@ function updateMarkerPosition() {
 // API — завантаження даних
 // ═══════════════════════════════════════
 
-/** Завантажити всі маршрути (один раз) */
-async function loadRoutes() {
+/** Завантажити маршрути, прив'язані до IMEI */
+async function loadRoutes(imei) {
+   const trimmed = (imei || '').trim();
+   if (!trimmed) {
+      allRoutes = [];
+      routesImeiLoaded = null;
+      return;
+   }
+
    try {
-      const res = await fetch('/api/track.php?action=get_routes');
+      const res = await fetch(
+         `/api/track.php?action=get_routes&imei=${encodeURIComponent(trimmed)}`
+      );
       const data = await res.json();
-      if (data.routes) {
-         allRoutes = data.routes;
-         console.log(`Завантажено ${allRoutes.length} маршрутів`);
+      if (data.error) {
+         console.warn('Помилка завантаження маршрутів:', data.error);
+         allRoutes = [];
+         routesImeiLoaded = null;
+         return;
+      }
+      allRoutes = data.routes || [];
+      routesImeiLoaded = trimmed;
+      console.log(`Завантажено ${allRoutes.length} маршрутів для IMEI ${trimmed}`);
+      if (allRoutes.length === 0) {
+         console.warn('Для цього IMEI немає прив\'язаних маршрутів (all_car_routes / routes_to_cars)');
       }
    } catch (e) {
       console.error('Помилка завантаження маршрутів:', e);
+      allRoutes = [];
+      routesImeiLoaded = null;
    }
 }
 
@@ -1380,10 +1433,7 @@ els.loadBtn.addEventListener('click', async () => {
    els.loadBtn.textContent = 'Завантаження...';
 
    try {
-      // Завантажити маршрути якщо ще не завантажені
-      if (allRoutes.length === 0) {
-         await loadRoutes();
-      }
+      await loadRoutes(imei);
 
       // Завантажити трек
       const ok = await loadTrack(imei, date);
@@ -1527,8 +1577,6 @@ document.addEventListener('DOMContentLoaded', () => {
    initMap();
    updateProgressBar(0);
 
-   // Предзавантаження маршрутів
-   loadRoutes();
    autoLoadPreset();
 });
 
@@ -1536,6 +1584,5 @@ document.addEventListener('DOMContentLoaded', () => {
 if (document.readyState !== 'loading') {
    initMap();
    updateProgressBar(0);
-   loadRoutes();
    autoLoadPreset();
 }
